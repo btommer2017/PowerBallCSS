@@ -7,18 +7,21 @@
     color: rgb(182, 76, 76);
 }
 
-#classHeading2 {
-    background-color: rgb(37, 69, 167);
+
+#tester1 {
+    background-image: url("../images/PB.jpg");
+    background-color: rgb(167, 152, 37);
     opacity:.8;
+    height: 25%;
+    width: 25%;
+    float: left;
+
 }
 
-#PbTicket {
-    background-image: url("../images/PB.jpg");
-    background-color: rgb(37, 69, 167);
-    opacity:.8;
-    height: 600px;
+#powerPlayNo {
+    height: 500px;
     width: 500px;
-
+    border-block: 5px;
 }
 
 #pbContainer {
@@ -30,30 +33,97 @@
 
 }
 
+#pb1 {
+    height: 50px;
+    width: 80%;
+    
+    margin: 5px;
+}
+
+#pb2 {
+    height: 50px;
+    width: 80%;
+    background-color: rgb(180, 226, 43);
+    margin: 5px;
+}
+
+#pb3 {
+    margin: 5px;
+    height: 50px;
+    width: 80%;
+   
+}
+
+#pb4 {
+    margin: 5px;
+    height: 50px;
+    width: 80%;
+    background-color: blueviolet;
+}
+
+#pb5 {
+    margin: 5px;
+    height: 50px;
+    width: 80%;
+   
+}
+
+#pb10 {
+    color: brown;
+    height: 5px;
+    width: 15%;
+    margin: 2px;
+}
+
+#pb9 {
+    color: brown;
+    height: 5px;
+    width: 10px;
+    margin: 2px;
+}
+
+.pbLetters {
+    background-color: rgb(73, 226, 43);
+}
+
+.pbNumber {
+    float: left;
+    height: 80%;
+    width: 10%;
+    background-color: aquamarine;
+}
+
+
+
 .testBox1 {
     background-color: rgb(37, 69, 167);
-    height: 700px;
-    width: 600px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
 }
 .testBox2 {
     background-color: rgb(31, 51, 110);
     height: 650px;
     width: 550px;
+    margin: 5px;
 }
 .testBox3 {
     background-color: rgb(101, 125, 199);
     height: 600px;
     width: 500px;
+    margin: 5px;
 }
 .testBox4 {
     background-color: rgb(37, 167, 57);
     height: 550px;
     width: 450px;
+    margin: 5px;
 }
 .testBox5 {
     background-color: rgb(167, 104, 37);
     height: 500px;
     width: 400px;
+    margin: 5px;
 }
 .testBox6 {
     background-color: rgb(167, 37, 128);
