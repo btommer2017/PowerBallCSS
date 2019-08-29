@@ -19,68 +19,55 @@
 }
 
 #powerPlayNo {
-    height: 500px;
+    height: 100px;
     width: 500px;
     border-block: 5px;
+    border-block-color: red;
 }
 
 #pbContainer {
-  
     background-color: rgb(37, 69, 167);
     opacity:.8;
-    height: 700px;
+    height: 500px;
     width: 600px;
-
 }
+
+.pbNumber {
+    background-color: rgb(37, 69, 167);
+}
+
 
 #pb1 {
-    height: 50px;
+    height: 20px;
     width: 80%;
-    
-    margin: 5px;
-}
+    background-color: blueviolet;
+  }
 
 #pb2 {
-    height: 50px;
+    height: 20px;
     width: 80%;
     background-color: rgb(180, 226, 43);
-    margin: 5px;
-}
+   }
 
 #pb3 {
-    margin: 5px;
-    height: 50px;
+    height: 20px;
     width: 80%;
-   
+    background-color: rgb(43, 226, 49);
 }
 
 #pb4 {
-    margin: 5px;
-    height: 50px;
+    height: 20px;
     width: 80%;
     background-color: blueviolet;
 }
 
 #pb5 {
-    margin: 5px;
-    height: 50px;
+    height: 20px;
     width: 80%;
-   
+    background-color: rgb(226, 43, 83);
 }
 
-#pb10 {
-    color: brown;
-    height: 5px;
-    width: 15%;
-    margin: 2px;
-}
 
-#pb9 {
-    color: brown;
-    height: 5px;
-    width: 10px;
-    margin: 2px;
-}
 
 .pbLetters {
     background-color: rgb(73, 226, 43);
