@@ -18,6 +18,11 @@
 
 }
 
+
+.pbTicket {
+    font-size: 11px;
+}
+
 #powerPlayNo {
     height: 100px;
     width: 500px;
@@ -26,10 +31,11 @@
 }
 
 #pbContainer {
-    background-image: url("../images/PB.jpg");
-    opacity:.8;
-    height: 500px;
-    width: 600px;
+    background-image: url(../images/PB.jpg);
+    /* opacity: .8; */
+    height: 840px;
+    width: 525px;
+}
 }
 
 .pbNumber {
@@ -39,39 +45,44 @@
 
 
 #pb1 {
-    margin-top: 325px;  
-    margin-left: 110px;  
+    margin-top: 325px;
+    margin-left: 135px;
     height: 20px;
-    width: 100%;
-    background-color: blueviolet;
+    width: 58%;
+    opacity:.75;
+   
   }
 
 #pb2 {
-    margin-left: 110px;
+    opacity:.75;
+    margin-left: 135px;
     height: 20px;
-    width: 80%;
-    background-color: rgb(180, 226, 43);
+    width: 58%;
+    
    }
 
 #pb3 {
-    margin-left: 110px;
+    opacity:.75;
+    margin-left: 135px;
     height: 20px;
-    width: 80%;
-    background-color: rgb(43, 226, 49);
+    width: 58%;
+    
 }
 
 #pb4 {
-    margin-left: 110px;
+    opacity:.75;
+    margin-left: 135px;
     height: 20px;
-    width: 80%;
-    background-color: blueviolet;
+    width: 58%;
+    
 }
 
 #pb5 {
-    margin-left: 110px;
+    opacity:.75;
+    margin-left: 135px;
     height: 20px;
-    width: 80%;
-    background-color: rgb(226, 43, 83);
+    width: 58%;
+   
 }
 
 
