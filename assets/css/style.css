@@ -30,6 +30,72 @@
 
 }
 
+.testBox1 {
+    background-color: rgb(37, 69, 167);
+    height: 700px;
+    width: 600px;
+}
+.testBox2 {
+    background-color: rgb(31, 51, 110);
+    height: 650px;
+    width: 550px;
+}
+.testBox3 {
+    background-color: rgb(101, 125, 199);
+    height: 600px;
+    width: 500px;
+}
+.testBox4 {
+    background-color: rgb(37, 167, 57);
+    height: 550px;
+    width: 450px;
+}
+.testBox5 {
+    background-color: rgb(167, 104, 37);
+    height: 500px;
+    width: 400px;
+}
+.testBox6 {
+    background-color: rgb(167, 37, 128);
+    height: 450px;
+    width: 350px;
+}
+.testBox7 {
+    background-color: rgb(161, 167, 37);
+    height: 400px;
+    width: 300px;
+}
+.testBox8 {
+    background-color: rgb(163, 37, 167);
+    height: 350px;
+    width: 250px;
+}
+.testBox9 {
+    background-color: rgb(61, 63, 68);
+    height: 300px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #instructions {
     padding: 2%;
     border: solid 3px black;
