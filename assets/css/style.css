@@ -3,10 +3,34 @@
 } */
 
 .jumbotron {
-   
-    color: rgb(182, 76, 76);
+       color: rgb(182, 76, 76);
 }
 
+#formInput {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#powerBallsubmitBuffer {
+    margin-left: 115px;
+}
+
+#PBsubmit {
+    width: 40px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    border-width: 0px;
+}
+#PbRandom {
+    width: 65px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    border-width: 0px;
+}
 
 #tester1 {
     background-image: url("../images/PB.jpg");
@@ -15,28 +39,94 @@
     height: 25%;
     width: 25%;
     float: left;
-
 }
 
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.powerBallsubmit {
+font-size: 12px;
+width: 30px;
+float: left;
+height: 30px;
+margin-left: 10px;
+text-align: center;
+display: grid;
+appearance: none;
+}
 
 .pbTicket {
     font-size: 11px;
 }
 
-#powerPlayNo {
+#pbContainerInput {
+    /* background-image: url(../images/PB.jpg); */
+    /* opacity: .8; */
+    height: 840px;
+    width: 525px;
+    float: left;
+    color: rgb(4, 7, 17);
+    background-color: yellow;
+    }
+    
+#powerPlayNo1 {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(149, 209, 213);
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    text-align: center;
+    text-decoration-color: black;
+}
+#powerPlayNo2 {
     height: 100px;
-    width: 500px;
-    border-block: 5px;
-    border-block-color: red;
+    width: 100%;
+    background-color: cadetblue;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
 }
 
+#powerPlayNo3 {
+    height: 15px;
+    width: 100%;
+    background-color: rgb(157, 208, 169);
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    text-align: center;
+}
+#powerPlayNo {
+    height: 100px;
+    width: 100%;
+    border-block: 5px;
+    border-block-color: red;
+   
+}
 #pbContainer {
     background-image: url(../images/PB.jpg);
     /* opacity: .8; */
     height: 840px;
     width: 525px;
+    float: left;
 }
+
+#pbContainer2 {
+    /* background-image: url(../images/PB.jpg); */
+    /* opacity: .8; */
+    height: 840px;
+    width: 525px;
+    float: left;
+    color: rgb(0, 55, 255);
+    background-color: yellow;
 }
+
+
+.pb
+
 
 .pbNumber {
     background-color: rgb(37, 69, 167);
@@ -150,26 +240,6 @@
     height: 300px;
     width: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #instructions {
     padding: 2%;
