@@ -3,7 +3,7 @@
 } */
 
 .jumbotron {
-       color: rgb(182, 76, 76);
+    color: rgb(182, 76, 76);
 }
 
 #formInput {
@@ -23,6 +23,7 @@
     text-align: center;
     border-width: 0px;
 }
+
 #PbRandom {
     width: 65px;
     height: 30px;
@@ -35,26 +36,27 @@
 #tester1 {
     background-image: url("../images/PB.jpg");
     background-color: rgb(167, 152, 37);
-    opacity:.8;
+    opacity: .8;
     height: 25%;
     width: 25%;
     float: left;
 }
 
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
--webkit-appearance: none;
-margin: 0;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .powerBallsubmit {
-font-size: 12px;
-width: 30px;
-float: left;
-height: 30px;
-margin-left: 10px;
-text-align: center;
-display: grid;
-appearance: none;
+    font-size: 12px;
+    width: 30px;
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    display: grid;
+    appearance: none;
 }
 
 .pbTicket {
@@ -69,8 +71,8 @@ appearance: none;
     float: left;
     color: rgb(4, 7, 17);
     background-color: yellow;
-    }
-    
+}
+
 #powerPlayNo1 {
     height: 20px;
     width: 100%;
@@ -81,6 +83,7 @@ appearance: none;
     text-align: center;
     text-decoration-color: black;
 }
+
 #powerPlayNo2 {
     height: 100px;
     width: 100%;
@@ -99,13 +102,14 @@ appearance: none;
     padding: 0%;
     text-align: center;
 }
+
 #powerPlayNo {
     height: 100px;
     width: 100%;
     border-block: 5px;
     border-block-color: red;
-   
 }
+
 #pbContainer {
     background-image: url(../images/PB.jpg);
     /* opacity: .8; */
@@ -124,58 +128,46 @@ appearance: none;
     background-color: yellow;
 }
 
-
-.pb
-
-
-.pbNumber {
+.pb .pbNumber {
     background-color: rgb(37, 69, 167);
     margin-left: 25%;
 }
-
 
 #pb1 {
     margin-top: 325px;
     margin-left: 135px;
     height: 20px;
     width: 58%;
-    opacity:.75;
-   
-  }
+    opacity: .75;
+}
 
 #pb2 {
-    opacity:.75;
+    opacity: .75;
     margin-left: 135px;
     height: 20px;
     width: 58%;
-    
-   }
+}
 
 #pb3 {
-    opacity:.75;
+    opacity: .75;
     margin-left: 135px;
     height: 20px;
     width: 58%;
-    
 }
 
 #pb4 {
-    opacity:.75;
+    opacity: .75;
     margin-left: 135px;
     height: 20px;
     width: 58%;
-    
 }
 
 #pb5 {
-    opacity:.75;
+    opacity: .75;
     margin-left: 135px;
     height: 20px;
     width: 58%;
-   
 }
-
-
 
 .pbLetters {
     background-color: rgb(73, 226, 43);
@@ -188,156 +180,92 @@ appearance: none;
     background-color: aquamarine;
 }
 
-
-
-.testBox1 {
-    background-color: rgb(37, 69, 167);
-    height: 100px;
-    width: 100px;
-    margin: 5px;
-}
-.testBox2 {
-    background-color: rgb(31, 51, 110);
-    height: 650px;
-    width: 550px;
-    margin: 5px;
-}
-.testBox3 {
-    background-color: rgb(101, 125, 199);
-    height: 600px;
-    width: 500px;
-    margin: 5px;
-}
-.testBox4 {
-    background-color: rgb(37, 167, 57);
-    height: 550px;
-    width: 450px;
-    margin: 5px;
-}
-.testBox5 {
-    background-color: rgb(167, 104, 37);
-    height: 500px;
-    width: 400px;
-    margin: 5px;
-}
-.testBox6 {
-    background-color: rgb(167, 37, 128);
-    height: 450px;
-    width: 350px;
-}
-.testBox7 {
-    background-color: rgb(161, 167, 37);
-    height: 400px;
-    width: 300px;
-}
-.testBox8 {
-    background-color: rgb(163, 37, 167);
-    height: 350px;
-    width: 250px;
-}
-.testBox9 {
-    background-color: rgb(61, 63, 68);
-    height: 300px;
-    width: 200px;
-}
-
-#instructions {
-    padding: 2%;
-    border: solid 3px black;
+.resultsRow {
+    height: 25px;
     width: 100%;
-    margin-top: 40px;
-    float: left;
-    background-color: rgb(37, 69, 167);
-    /* background-image: url("../images/background3.jpg"); */
-    color: white;
-    opacity:.85;
 }
 
-#instructions:hover {
-opacity:.94;
-}
-/* extra background images to easily change to */
-
-
-
-#instructionBox {
-    margin-top: 40px;
+#resultsRow1 {
+    background-color: cyan;
 }
 
-#totalScoreTargetBox {
-    border: solid 3px black;
-    height: 100px;
+#resultsRow2 {
+    background-color: darkcyan;
+}
+
+#resultsRow3 {
+    background-color: cyan;
+}
+
+#resultsRow4 {
+    background-color: darkcyan;
+}
+
+#resultsRow5 {
+    background-color: cyan;
+}
+
+#resultsRow6 {
+    background-color: darkcyan;
+}
+
+#resultsRow7 {
+    background-color: cyan;
+}
+
+#resultsRow8 {
+    background-color: darkcyan;
+}
+
+#resultsRow9 {
+    background-color: cyan;
+}
+
+#resultsRow10 {
+    background-color: darkcyan;
+}
+
+.match {
     text-align: center;
-    width: 60%;
-    margin-top: 20px;
+    border: 1px solid black;    
     float: left;
-    background-color: rgb(37, 69, 167);
-    /* background-image: url("../images/background3.jpg"); */
-    color: white;
-    padding-top: 8px;
-    opacity:.8;
+    height: 100%;
+    width: 13.5%;
+    background-color: bisque;
 }
 
-#winsLosesBox {
-    border: solid 3px black;
-    height: 100px;
-    padding-top: 11px;
+.prize {
     text-align: center;
-    font-weight: bolder;
+    border: 1px solid black;    
     float: left;
-    margin-top: 20px;
-    width: 35%;
-    margin-left: 5%;
-    background-color: rgb(37, 69, 167);
-    /* background-image: url("../images/background3.jpg"); */
-    color: white;
-    opacity:.8;
+    height: 100%;
+    width: 20.8%;
+    background-color: rgb(191, 133, 62);
 }
 
-.crystal {
-    border: solid 4px black;
-    height: 136px;
-    width: 24%;
-    float: left;
-    background-color: white;
-    margin-top: 20px;
-    margin-right: .5%;
-    margin-left: .5%;
-    opacity: .75;
-}
-.crystal:hover {
-opacity:.9;
-}
-.crystal:active {
-    opacity: .75;
-    background-color: rgb(37, 69, 167);
-    box-shadow: 0 2px #666;
-    transform: translateY(2px);
-}
-#totalScoreTextBox {
-    border: solid 3px black;
-    height: 70px;
+.timesHit {
     text-align: center;
-    margin-top: 20px;
-    width: 100%;
+    border: 1px solid black;    
     float: left;
-    background-color: rgb(37, 69, 167);
-    /* background-image: url("../images/background3.jpg"); */
-    color: white;
-    opacity:.8;
+    height: 100%;
+    width: 19.1%;
+    background-color: bisque;
 }
 
-#currentTotalScoreBox {
-    border: solid 3px black;
-    height: 70px;
+.totalWon {
     text-align: center;
-    margin-top: 20px;
-    width: 100%;
-    margin-bottom: 40px;
+    border: 1px solid black;    
     float: left;
-    background-color: rgb(37, 69, 167);
-    /* background-image: url("../images/background3.jpg"); */
-    color: white;
-    padding-bottom: 80px;
-    opacity:.8;
+    height: 100%;
+    width: 20.8%;
+    background-color: rgb(191, 133, 62);
+}
+
+.odds {
+    text-align: center;
+    border: 1px solid black;    
+    float: left;
+    height: 100%;
+    width: 25.8%;
+    background-color: bisque;
 }

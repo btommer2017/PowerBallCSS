@@ -2,99 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>PowerBall</title>
+        <meta charset="UTF-8">
+        <title>PowerBall</title>
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
-    <!-- add link to css stylesheet that'll overide any previous css based on the bottom placement -->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Added a link to Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+                integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+                crossorigin="anonymous">
+        <!-- add link to css stylesheet that'll overide any previous css based on the bottom placement -->
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-<!-- <div class="jumbotron">
+        <!-- <div class="jumbotron">
         <h1 id="mainTitle4" class="text-center">PowerBall!!</h1>
     </div> -->
-   <div id="pbContainer">
-        <!-- <div class="row" id="powerPlayNo"> -->
-        <div class="row" id="pb1">
-                <div class="col-sm-1" class="pbTicket" id="pb10">001</div>
-                <div class="col-sm-1" class="pbNumber" id="pb11">11</div>
-                <div class="col-sm-1" class="pbNumber" id="pb12">33</div>
-                <div class="col-sm-1" class="pbNumber" id="pb13">34</div>
-                <div class="col-sm-1" class="pbNumber" id="pb14">60</div>
-                <div class="col-sm-1" class="pbNumber" id="pb15">69</div>
-                <div class="col-sm-1" class="pbLetters">PB</div>
-                <div class="col-sm-1" class="pbNumber" id="pb16">23</div>
-                <div class="col-sm-1" class="pbTicket">Q6</div>
+        <div id="pbContainer">
+                <!-- <div class="row" id="powerPlayNo"> -->
+                <div class="row" id="pb1">
+                        <div class="col-sm-1" class="pbTicket" id="pb10">001</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb11">11</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb12">33</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb13">34</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb14">60</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb15">69</div>
+                        <div class="col-sm-1" class="pbLetters">PB</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb16">23</div>
+                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                </div>
+                <div class="row" id="pb2">
+                        <div class="col-sm-1" class="pbTicket" id="pb20">002</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb21">05</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb22">09</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb23">22</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb24">33</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb25">49</div>
+                        <div class="col-sm-1" class="pbLetters">PB</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb26">26</div>
+                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                </div>
+                <div class="row" id="pb3">
+                        <div class="col-sm-1" class="pbTicket" id="pb30">003</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb31">11</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb32">19</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb33">33</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb34">34</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb35">40</div>
+                        <div class="col-sm-1" class="pbLetters">PB</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb36">13</div>
+                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                </div>
+                <div class="row" id="pb4">
+                        <div class="col-sm-1" class="pbTicket" id="pb40">004</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb41">11</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb42">18</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb43">26</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb44">33</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb45">47</div>
+                        <div class="col-sm-1" class="pbLetters">PB</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb46">11</div>
+                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                </div>
+                <div class="row" id="pb5">
+                        <div class="col-sm-1" class="pbTicket" id="pb50">005</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb51">02</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb52">09</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb53">27</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb54">52</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb55">67</div>
+                        <div class="col-sm-1" class="pbLetters">PB</div>
+                        <div class="col-sm-1" class="pbNumber" id="pb56">08</div>
+                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                </div>
+                <!-- </div> -->
         </div>
-        <div class="row" id="pb2">
-                <div class="col-sm-1" class="pbTicket" id="pb20">002</div>
-                <div class="col-sm-1" class="pbNumber" id="pb21">05</div>
-                <div class="col-sm-1" class="pbNumber" id="pb22">09</div>
-                <div class="col-sm-1" class="pbNumber" id="pb23">22</div>
-                <div class="col-sm-1" class="pbNumber" id="pb24">33</div>
-                <div class="col-sm-1" class="pbNumber" id="pb25">49</div>
-                <div class="col-sm-1" class="pbLetters">PB</div>
-                <div class="col-sm-1" class="pbNumber" id="pb26">26</div>
-                <div class="col-sm-1" class="pbTicket">Q6</div>
-        </div>  
-        <div class="row" id="pb3">
-                <div class="col-sm-1" class="pbTicket" id="pb30">003</div>
-                <div class="col-sm-1" class="pbNumber" id="pb31">11</div>
-                <div class="col-sm-1" class="pbNumber" id="pb32">19</div>
-                <div class="col-sm-1" class="pbNumber" id="pb33">33</div>
-                <div class="col-sm-1" class="pbNumber" id="pb34">34</div>
-                <div class="col-sm-1" class="pbNumber" id="pb35">40</div>
-                <div class="col-sm-1" class="pbLetters">PB</div>
-                <div class="col-sm-1" class="pbNumber" id="pb36">13</div>
-                <div class="col-sm-1" class="pbTicket">Q6</div>
-        </div>
-        <div class="row" id="pb4">
-                <div class="col-sm-1" class="pbTicket" id="pb40">004</div>
-                <div class="col-sm-1" class="pbNumber" id="pb41">11</div>
-                <div class="col-sm-1" class="pbNumber" id="pb42">18</div>
-                <div class="col-sm-1" class="pbNumber" id="pb43">26</div>
-                <div class="col-sm-1" class="pbNumber" id="pb44">33</div>
-                <div class="col-sm-1" class="pbNumber" id="pb45">47</div>
-                <div class="col-sm-1" class="pbLetters">PB</div>
-                <div class="col-sm-1" class="pbNumber" id="pb46">11</div>
-                <div class="col-sm-1" class="pbTicket">Q6</div>
-        </div>
-        <div class="row" id="pb5">
-                <div class="col-sm-1" class="pbTicket" id="pb50">005</div>
-                <div class="col-sm-1" class="pbNumber" id="pb51">02</div>
-                <div class="col-sm-1" class="pbNumber" id="pb52">09</div>
-                <div class="col-sm-1" class="pbNumber" id="pb53">27</div>
-                <div class="col-sm-1" class="pbNumber" id="pb54">52</div>
-                <div class="col-sm-1" class="pbNumber" id="pb55">67</div>
-                <div class="col-sm-1" class="pbLetters">PB</div>
-                <div class="col-sm-1" class="pbNumber" id="pb56">08</div>
-                <div class="col-sm-1" class="pbTicket">Q6</div>
-        </div>
-    <!-- </div> -->
-</div>
 
-<div id="pbContainerInput">
+        <div id="pbContainerInput">
                 <div class="row" id="powerPlayNo1">
                         Choose Your Numbers or Select Randomly
                 </div>
                 <div class="row" id="powerPlayNo3">
-                                #1      #2      #3      #4      #5      PB
-                        </div>
+                        #1 #2 #3 #4 #5 PB
+                </div>
 
-        <div class="row" id="powerPlayNo2">
-              
-         
-                <!-- <div class="row" id="pb4">
-                </div>                 -->
-                       
-                <form id=formInput>
-                                <input class="powerBallsubmit" id="powerBallsubmitBuffer" type="number" name="num1" min="1" max="69" required>
+                <div class="row" id="powerPlayNo2">
+
+                        <form id=formInput>
+                                <input class="powerBallsubmit" id="powerBallsubmitBuffer" type="number" name="num1"
+                                        min="1" max="69" required>
                                 <input class="powerBallsubmit" type="number" name="num2" min="1" max="69" required>
                                 <input class="powerBallsubmit" type="number" name="num3" min="1" max="69" required>
                                 <input class="powerBallsubmit" type="number" name="num4" min="1" max="69" required>
@@ -103,12 +101,86 @@
                                 <input type="submit" id="PBsubmit" value="Add">
                                 <input type="button" id="PbRandom" value="Random">
 
-                        </form>  
-              
-               
-                
-            </div>
-</div>
+                        </form>
+                </div>
 
-       
+                <div class="resultsRow" id="resultsRow0">
+                                <div class="match">Match</div>
+                                <div class="prize">Prize</div>
+                                <div class="timesHit">Times Hit</div>
+                                <div class="totalWon">Total Won</div>
+                                <div class="odds">Odds</div>
+                       
+                </div>
+
+                <div class="resultsRow" id="resultsRow1">
+                                <div class="match">5+PB</div>
+                                <div class="prize">Jackpot</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">292201338.00</div>
+                       
+                </div>
+
+                <div class="resultsRow" id="resultsRow2">
+                <div class="match">5-PB</div>
+                <div class="prize">$1,000,000</div>
+                <div class="timesHit">0</div>
+                <div class="totalWon">$0</div>
+                <div class="odds">11688053.52</div>
+                </div>
+
+                <div class="resultsRow" id="resultsRow3">
+                                <div class="match">4+PB</div>
+                                <div class="prize">$50,000</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">913129.18</div>
+                </div>
+                <div class="resultsRow" id="resultsRow4">
+                                <div class="match">4-PB</div>
+                                <div class="prize">$100</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">36525.17</div>
+                </div>
+                <div class="resultsRow" id="resultsRow5">
+                                <div class="match">3+PB</div>
+                                <div class="prize">$100</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">14494.11</div>
+                </div>
+                <div class="resultsRow" id="resultsRow6">
+                                <div class="match">3-PB</div>
+                                <div class="prize">$7</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">579.76</div>
+                </div>
+                <div class="resultsRow" id="resultsRow7">
+                                <div class="match">2+PB</div>
+                                <div class="prize">$7</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">701.33</div>
+                </div>
+                <div class="resultsRow" id="resultsRow8">
+                                <div class="match">1+PB</div>
+                                <div class="prize">$4</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">91.98</div>
+                </div>
+                <div class="resultsRow" id="resultsRow9">
+                                <div class="match">PB</div>
+                                <div class="prize">$4</div>
+                                <div class="timesHit">0</div>
+                                <div class="totalWon">$0</div>
+                                <div class="odds">38.32</div>
+                </div>
+                
+        </div>
+
+
 </body>
