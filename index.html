@@ -31,7 +31,7 @@
                         <div class="col-sm-1" class="pbNumber" id="pb15">69</div>
                         <div class="col-sm-1" class="pbLetters">PB</div>
                         <div class="col-sm-1" class="pbNumber" id="pb16">23</div>
-                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                        <!-- <div class="col-sm-1" class="pbTicket">Q6</div> -->
                 </div>
                 <div class="row" id="pb2">
                         <div class="col-sm-1" class="pbTicket" id="pb20">002</div>
@@ -42,7 +42,7 @@
                         <div class="col-sm-1" class="pbNumber" id="pb25">49</div>
                         <div class="col-sm-1" class="pbLetters">PB</div>
                         <div class="col-sm-1" class="pbNumber" id="pb26">26</div>
-                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                        <!-- <div class="col-sm-1" class="pbTicket">Q6</div> -->
                 </div>
                 <div class="row" id="pb3">
                         <div class="col-sm-1" class="pbTicket" id="pb30">003</div>
@@ -53,7 +53,7 @@
                         <div class="col-sm-1" class="pbNumber" id="pb35">40</div>
                         <div class="col-sm-1" class="pbLetters">PB</div>
                         <div class="col-sm-1" class="pbNumber" id="pb36">13</div>
-                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                        <!-- <div class="col-sm-1" class="pbTicket">Q6</div> -->
                 </div>
                 <div class="row" id="pb4">
                         <div class="col-sm-1" class="pbTicket" id="pb40">004</div>
@@ -64,7 +64,7 @@
                         <div class="col-sm-1" class="pbNumber" id="pb45">47</div>
                         <div class="col-sm-1" class="pbLetters">PB</div>
                         <div class="col-sm-1" class="pbNumber" id="pb46">11</div>
-                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                        <!-- <div class="col-sm-1" class="pbTicket">Q6</div> -->
                 </div>
                 <div class="row" id="pb5">
                         <div class="col-sm-1" class="pbTicket" id="pb50">005</div>
@@ -75,7 +75,7 @@
                         <div class="col-sm-1" class="pbNumber" id="pb55">67</div>
                         <div class="col-sm-1" class="pbLetters">PB</div>
                         <div class="col-sm-1" class="pbNumber" id="pb56">08</div>
-                        <div class="col-sm-1" class="pbTicket">Q6</div>
+                        <!-- <div class="col-sm-1" class="pbTicket">Q6</div> -->
                 </div>
                 <!-- </div> -->
         </div>
@@ -84,6 +84,23 @@
                 <div class="row" id="powerPlayNo1">
                         Choose Your Numbers or Select Randomly
                 </div>
+
+
+                <!-- This is where the powerball ticket number will be selected -->
+                <div id="ticketSelectorBox">
+                        <button class="ticketSelector" id="ticket1" onclick="assignTicketNumber()">Ticket 1</button>
+                        <button class="ticketSelector" id="ticket2" onclick="assignTicketNumber()">Ticket 2</button>
+                        <button class="ticketSelector" id="ticket3" onclick="assignTicketNumber()">Ticket 3</button>
+                        <button class="ticketSelector" id="ticket4" onclick="assignTicketNumber()">Ticket 4</button>
+                        <button class="ticketSelector" id="ticket5" onclick="assignTicketNumber()">Ticket 5</button>
+                </div>
+
+                <div id="currentlySelectedBox">
+
+
+                </div>
+
+
                 <div class="row" id="powerPlayNo3">
                         #1 #2 #3 #4 #5 PB
                 </div>
@@ -99,88 +116,166 @@
                                 <input class="powerBallsubmit" type="number" name="num5" min="1" max="69" required>
                                 <input class="powerBallsubmit" type="number" name="numPB" min="1" max="26" required>
                                 <input type="submit" id="PBsubmit" value="Add">
-                                <input type="button" id="PbRandom" value="Random">
+                                <input type="button" onclick="getNumbers()" id="PbRandom" value="Random">
 
                         </form>
                 </div>
 
                 <div class="resultsRow" id="resultsRow0">
-                                <div class="match">Match</div>
-                                <div class="prize">Prize</div>
-                                <div class="timesHit">Times Hit</div>
-                                <div class="totalWon">Total Won</div>
-                                <div class="odds">Odds</div>
-                       
+                        <div class="match">Match</div>
+                        <div class="prize">Prize</div>
+                        <div class="timesHit">Times Hit</div>
+                        <div class="totalWon">Total Won</div>
+                        <div class="odds">Odds</div>
+
                 </div>
 
                 <div class="resultsRow" id="resultsRow1">
-                                <div class="match">5+PB</div>
-                                <div class="prize">Jackpot</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">292201338.00</div>
-                       
+                        <div class="match">5+PB</div>
+                        <div class="prize">Jackpot</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">292201338.00</div>
+
                 </div>
 
                 <div class="resultsRow" id="resultsRow2">
-                <div class="match">5-PB</div>
-                <div class="prize">$1,000,000</div>
-                <div class="timesHit">0</div>
-                <div class="totalWon">$0</div>
-                <div class="odds">11688053.52</div>
+                        <div class="match">5-PB</div>
+                        <div class="prize">$1,000,000</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">11688053.52</div>
                 </div>
 
                 <div class="resultsRow" id="resultsRow3">
-                                <div class="match">4+PB</div>
-                                <div class="prize">$50,000</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">913129.18</div>
+                        <div class="match">4+PB</div>
+                        <div class="prize">$50,000</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">913129.18</div>
                 </div>
                 <div class="resultsRow" id="resultsRow4">
-                                <div class="match">4-PB</div>
-                                <div class="prize">$100</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">36525.17</div>
+                        <div class="match">4-PB</div>
+                        <div class="prize">$100</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">36525.17</div>
                 </div>
                 <div class="resultsRow" id="resultsRow5">
-                                <div class="match">3+PB</div>
-                                <div class="prize">$100</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">14494.11</div>
+                        <div class="match">3+PB</div>
+                        <div class="prize">$100</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">14494.11</div>
                 </div>
                 <div class="resultsRow" id="resultsRow6">
-                                <div class="match">3-PB</div>
-                                <div class="prize">$7</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">579.76</div>
+                        <div class="match">3-PB</div>
+                        <div class="prize">$7</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">579.76</div>
                 </div>
                 <div class="resultsRow" id="resultsRow7">
-                                <div class="match">2+PB</div>
-                                <div class="prize">$7</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">701.33</div>
+                        <div class="match">2+PB</div>
+                        <div class="prize">$7</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">701.33</div>
                 </div>
                 <div class="resultsRow" id="resultsRow8">
-                                <div class="match">1+PB</div>
-                                <div class="prize">$4</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">91.98</div>
+                        <div class="match">1+PB</div>
+                        <div class="prize">$4</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">91.98</div>
                 </div>
                 <div class="resultsRow" id="resultsRow9">
-                                <div class="match">PB</div>
-                                <div class="prize">$4</div>
-                                <div class="timesHit">0</div>
-                                <div class="totalWon">$0</div>
-                                <div class="odds">38.32</div>
+                        <div class="match">PB</div>
+                        <div class="prize">$4</div>
+                        <div class="timesHit">0</div>
+                        <div class="totalWon">$0</div>
+                        <div class="odds">38.32</div>
                 </div>
-                
+
         </div>
 
+
+
+
+        <script>
+
+                var t1n1,t1n2,t1n3,t1n4,t1n5,t1pb 
+                var t2n1,t2n2,t2n3,t2n4,t2n5,t2pb 
+                var t3n1,t3n2,t3n3,t3n4,t3n5,t3pb 
+                var t4n1,t4n2,t4n3,t4n4,t4n5,t4pb 
+                var t5n1,t5n2,t5n3,t5n4,t5n5,t5pb 
+
+                function assignTicketNumber() {
+                        document.getElementById("currentlySelectedBox").innerHTML = document.getElementById("ticket1").innerHTML + " Hi There!";
+                }
+
+
+
+                // function to get a random number 1 through 69 and 1 through 26 for the powerball
+                function getNumbers() {
+                        var num1 = Math.floor((Math.random() * 69) + 1);
+                        var num2 = Math.floor((Math.random() * 69) + 1);
+                        var num3 = Math.floor((Math.random() * 69) + 1);
+                        var num4 = Math.floor((Math.random() * 69) + 1);
+                        var num5 = Math.floor((Math.random() * 69) + 1);
+                        var numPB = Math.floor((Math.random() * 26) + 1);
+
+                        // this code makes sure non of the non powerball numbers are the same
+                        while (num2 === num1) {
+                                var num2 = Math.floor((Math.random() * 69) + 1);
+                        }
+
+                        while (num3 === num2 || num3 === num1) {
+                                var num3 = Math.floor((Math.random() * 69) + 1);
+                        }
+
+                        while (num4 === num3 || num4 === num2 || num4 === num1) {
+                                var num4 = Math.floor((Math.random() * 69) + 1);
+                        }
+
+                        while (num5 === num4 || num5 === num3 || num5 === num2 || num5 === num1) {
+                                var num5 = Math.floor((Math.random() * 69) + 1);
+                        }
+
+                        //add numbers to an array after same number check
+                        var arr = [num1, num2, num3, num4, num5];
+
+                        // bubble sorting the array to put them in numerical order
+                        function swap(arr, first_Index, second_Index) {
+                                var temp = arr[first_Index];
+                                arr[first_Index] = arr[second_Index];
+                                arr[second_Index] = temp;
+                        }
+
+                        function bubble_Sort(arr) {
+
+                                var len = arr.length,
+                                        i, j, stop;
+
+                                for (i = 0; i < len; i++) {
+                                        for (j = 0, stop = len - i; j < stop; j++) {
+                                                if (arr[j] > arr[j + 1]) {
+                                                        swap(arr, j, j + 1);
+                                                }
+                                        }
+                                }
+                        }
+                        //run the function to make sure non powerball numbers are in numerical order
+                        bubble_Sort(arr);
+
+                        document.getElementById("pb11").innerHTML = arr[0];
+                        document.getElementById("pb12").innerHTML = arr[1];
+                        document.getElementById("pb13").innerHTML = arr[2];
+                        document.getElementById("pb14").innerHTML = arr[3];
+                        document.getElementById("pb15").innerHTML = arr[4];
+                        document.getElementById("pb16").innerHTML = numPB;
+
+                }
+        </script>
 
 </body>
