@@ -15,6 +15,77 @@
     margin-left: 115px;
 }
 
+#pbContainer {
+    background-image: url(../images/PB.jpg);
+    /* opacity: .8; */
+    height: 840px;
+    width: 525px;
+    float: left;
+}
+
+#pb1 {
+    margin-top: 325px;
+    margin-left: 128px;
+    height: 20px;
+    width: 100%;
+    opacity: .75;
+}
+
+#pb2 {
+    opacity: .75;
+    margin-left: 128px;
+    height: 20px;
+    width: 100%;
+}
+
+#pb3 {
+    opacity: .75;
+    margin-left: 128px;
+    height: 20px;
+    width: 100%;
+}
+
+#pb4 {
+    opacity: .75;
+    margin-left: 128px;
+    height: 20px;
+    width: 100%;
+}
+
+#pb5 {
+    opacity: .75;
+    margin-left: 128px;
+    height: 20px;
+    width: 100%;
+}
+
+.pbTicket {
+    float: left;
+    height: 80%;
+    width: 7%;
+    }
+
+.pbNumber {
+    float: left;
+    height: 80%;
+    width: 7%;
+    }
+
+.pbLetters {
+    float: left;
+    height: 80%;
+    width: 7%;
+   }
+
+   .pbNum {
+    float: left;
+    height: 80%;
+    width: 7%;
+    color: red;
+    font: bold;
+   }
+
+
 #PBsubmit {
     width: 40px;
     height: 30px;
@@ -33,14 +104,7 @@
     border-width: 0px;
 }
 
-#tester1 {
-    background-image: url("../images/PB.jpg");
-    background-color: rgb(167, 152, 37);
-    opacity: .8;
-    height: 25%;
-    width: 25%;
-    float: left;
-}
+
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -59,9 +123,6 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
 }
 
-.pbTicket {
-    font-size: 11px;
-}
 
 #pbContainerInput {
     /* background-image: url(../images/PB.jpg); */
@@ -110,13 +171,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-block-color: red;
 }
 
-#pbContainer {
-    background-image: url(../images/PB.jpg);
-    /* opacity: .8; */
-    height: 840px;
-    width: 525px;
-    float: left;
-}
+
 #ticketSelectorBox {
     height: 60px;
 }
@@ -136,57 +191,13 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: yellow;
 }
 
-.pb .pbNumber {
+/* .pbNumber {
     background-color: rgb(37, 69, 167);
     margin-left: 25%;
-}
+} */
 
-#pb1 {
-    margin-top: 325px;
-    margin-left: 135px;
-    height: 20px;
-    width: 58%;
-    opacity: .75;
-}
 
-#pb2 {
-    opacity: .75;
-    margin-left: 135px;
-    height: 20px;
-    width: 58%;
-}
 
-#pb3 {
-    opacity: .75;
-    margin-left: 135px;
-    height: 20px;
-    width: 58%;
-}
-
-#pb4 {
-    opacity: .75;
-    margin-left: 135px;
-    height: 20px;
-    width: 58%;
-}
-
-#pb5 {
-    opacity: .75;
-    margin-left: 135px;
-    height: 20px;
-    width: 58%;
-}
-
-.pbLetters {
-    background-color: rgb(73, 226, 43);
-}
-
-.pbNumber {
-    float: left;
-    height: 80%;
-    width: 10%;
-    background-color: aquamarine;
-}
 
 .resultsRow {
     height: 25px;
@@ -235,7 +246,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .match {
     text-align: center;
-    border: 1px solid black;    
+    /* border: 1px solid black;     */
     float: left;
     height: 100%;
     width: 13.5%;
@@ -244,7 +255,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .prize {
     text-align: center;
-    border: 1px solid black;    
+    /* border: 1px solid black;     */
     float: left;
     height: 100%;
     width: 20.8%;
@@ -253,7 +264,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .timesHit {
     text-align: center;
-    border: 1px solid black;    
+    /* border: 1px solid black;     */
     float: left;
     height: 100%;
     width: 19.1%;
@@ -262,7 +273,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .totalWon {
     text-align: center;
-    border: 1px solid black;    
+    /* border: 1px solid black;     */
     float: left;
     height: 100%;
     width: 20.8%;
@@ -271,7 +282,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .odds {
     text-align: center;
-    border: 1px solid black;    
+    /* border: 1px solid black;     */
     float: left;
     height: 100%;
     width: 25.8%;
