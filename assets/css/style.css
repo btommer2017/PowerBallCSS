@@ -288,3 +288,91 @@ input[type=number]::-webkit-outer-spin-button {
     width: 25.8%;
     background-color: bisque;
 }
+
+#ticketsPlayed {
+    height: 25px;
+    width: 50%;
+    float: left;
+    background-color: rgb(40, 99, 101);
+    text-align: center;
+}
+
+#netResults {
+    height: 25px;
+    width: 50%;
+    float: left;
+    background-color: rgb(2, 76, 2);
+    text-align: center;
+}
+
+#ticketsPlayed2 {
+    height: 40px;
+    width: 50%;
+    float: left;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#netResults2 {
+    height: 40px;
+    width: 50%;
+    float: left;
+    background-color: green;
+    text-align: center;
+}
+
+#pbDrawingNumbers1 {
+    height: 40px;
+    width: 15%;
+    background-color: blanchedalmond;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pbDrawingNumbers2 {
+    height: 40px;
+    float: left;
+    width: 15%;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pbDrawingNumbers3 {
+    height: 40px;
+    float: left;
+    width: 15%;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pbDrawingNumbers4 {
+    height: 40px;
+    width: 15%;
+    float: left;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pbDrawingNumbers5 {
+    height: 40px;
+    width: 15%;
+    float: left;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pbDrawingNumbersPB {
+    height: 40px;
+    width: 15%;
+    float: left;
+    background-color: blanchedalmond;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
