@@ -206,8 +206,10 @@
                
                 <!-- buttons to control the lottery simulation -->
                 <div>
-                    <input id="howManyDays" type="number"  min="1"  required>
-                    <button onclick="simulateLottery()">Simulate Lottery</button>
+                    How many Days?<input id="howManyDays" type="number"  min="1"  required>
+
+                    <button onclick="addDays()">Add Days</button>
+                    <button onclick="checkTicketsForMatches()">Simulate Lottery</button>
                 </div>
 
                 <!-- data to check lottery simulation results -->
@@ -232,13 +234,32 @@
                 var t4n1, t4n2, t4n3, t4n4, t4n5, t4pb
                 var t5n1, t5n2, t5n3, t5n4, t5n5, t5pb
                 var cBoxNum
-                var ticket1numbers = []
-                var ticket2numbers = []
-                var ticket3numbers = []
-                var ticket4numbers = []
-                var ticket5numbers = []
-                var arr
+                var ticket1numbers = [];
+                var ticket2numbers = [];
+                var ticket3numbers = [];
+                var ticket4numbers = [];
+                var ticket5numbers = [];
+                var arr;
                 var resultsArray = []
+                var numberOfDays = 1;
+                var fivePlusPb = 0;
+                var fiveMinusPb =0;
+                var fourPlusPb = 0;
+                var fourMinusPb =0;
+                var threePlusPb = 0;
+                var threeMinusPb =0;
+                var twoPlusPb = 0;
+                var onePlusPb = 0;
+                var onlyPb = 0;
+                var matchCounter=0;
+                var powerballCounter=0;
+                var allTickets = [ticket1numbers, ticket2numbers, ticket3numbers, ticket4numbers, ticket5numbers];
+
+
+                function addDays() {
+                        numberOfDays = Number(document.getElementById("howManyDays").value);
+                        console.log(numberOfDays);
+                }
 
                 function assignTicket1() {
                         cBoxNum=1;
@@ -337,22 +358,27 @@
                         if (cBoxNum===1) {
                             ticket1numbers = arr;
                                 document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 1 numbers " + ticket1numbers;
+                                allTickets.splice(0,1,arr);
                         } 
                         if (cBoxNum===2) {
                             ticket2numbers = arr;
                                 document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 2 numbers " + ticket2numbers;
+                                allTickets.splice(1,1,arr);
                         } 
                         if (cBoxNum===3) {
                             ticket3numbers = arr;
                                 document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 3 numbers " + ticket3numbers;
+                                allTickets.splice(2,1,arr);
                         } 
                         if (cBoxNum===4) {
                             ticket4numbers = arr;
                                 document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 4 numbers " + ticket4numbers;
+                                allTickets.splice(3,1,arr);
                         } 
                         if (cBoxNum===5) {
                             ticket5numbers = arr;
                                 document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 5 numbers " + ticket5numbers;
+                                allTickets.splice(4,1,arr);
                         } 
                       
 
@@ -418,8 +444,34 @@
                                 var num5 = Math.floor((Math.random() * 69) + 1);
                         }
 
+                        
+
                         //add numbers to an array after same number check
-                        var resultsArray = [num1, num2, num3, num4, num5, numPB];
+                        resultsArray = [num1, num2, num3, num4, num5];
+
+                        function swap(arr, first_Index, second_Index) {
+                                var temp = arr[first_Index];
+                                arr[first_Index] = arr[second_Index];
+                                arr[second_Index] = temp;
+                        }
+
+                        function bubble_Sort(arr) {
+
+                                var len = arr.length,
+                                        i, j, stop;
+
+                                for (i = 0; i < len; i++) {
+                                        for (j = 0, stop = len - i; j < stop; j++) {
+                                                if (arr[j] > arr[j + 1]) {
+                                                        swap(arr, j, j + 1);
+                                                }
+                                        }
+                                }
+                        }
+
+                        bubble_Sort(resultsArray);
+                        resultsArray.push(numPB);
+
 
                         document.getElementById("pbDrawingNumbers1").innerHTML = resultsArray[0];
                         document.getElementById("pbDrawingNumbers2").innerHTML = resultsArray[1];
@@ -428,9 +480,70 @@
                         document.getElementById("pbDrawingNumbers5").innerHTML = resultsArray[4];
                         document.getElementById("pbDrawingNumbersPB").innerHTML = resultsArray[5];
 
+                        // console.log(resultsArray);
+                        // console.log("Ticket #1 : " + ticket1numbers);
+                        // console.log("Ticket #2 : " + ticket2numbers);
+                        // console.log("Ticket #3 : " + ticket3numbers);
+                        // console.log("Ticket #4 : " + ticket4numbers);
+                        // console.log("Ticket #5 : " + ticket5numbers);
+                     
 
 
+                //      for (i=0; i<5; i++) {
+                //         if (allTickets[i].length === 6) {
+                //                 console.log("lottery ticket " + (i+1) + " is in play");
+                //         }
+                //      }
                 }
+
+
+                     function checkTicketsForMatches() {
+
+                        for (i=0; i<numberOfDays; i++) {
+                                simulateLottery();
+                                console.log("Drawing number " + (i+1) + "'s winning Lottery Numbers are " + resultsArray);
+                        //       for (j=0; j<resultsArray.length+1; j++ ) {
+                        //               if ( (resultsArray[j] = ticket1numbers[0]) ||
+                        //               (resultsArray[j] = ticket1numbers[1]) ||
+                        //               (resultsArray[j] = ticket1numbers[2]) ||
+                        //               (resultsArray[j] = ticket1numbers[3]) ||
+                        //               (resultsArray[j] = ticket1numbers[4]) ) {
+                        //                       matchCounter++;
+                        //               }
+                        //       }
+                        }
+
+                                // if ( (resultsArray[0] === ticket1numbers[0]) ||
+                                //      (resultsArray[0] === ticket1numbers[1]) ||
+                                //      (resultsArray[0] === ticket1numbers[2]) || 
+                                //      (resultsArray[0] === ticket1numbers[3]) ||
+                                //      (resultsArray[0] === ticket1numbers[4]) ) {
+                                //         matchCounter++;
+                                //         console.log(matchCounter + " numbers matched");
+                                    
+                                }
+                               
+
+                                // console.log(matchCounter + " numbers matched");
+
+                                // matchCounter = 0;
+
+
+
+                                // Now to add the code to check the tickets versus the powerball
+
+
+                        
+
+
+                //      }
+
+                     
+
+
+
+        //end of simulate lottery function 
+                
 
 
         </script>

@@ -303,6 +303,7 @@ input[type=number]::-webkit-outer-spin-button {
     float: left;
     background-color: rgb(2, 76, 2);
     text-align: center;
+    color: aliceblue;
 }
 
 #ticketsPlayed2 {
