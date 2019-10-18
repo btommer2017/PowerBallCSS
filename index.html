@@ -2,550 +2,708 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <title>PowerBall</title>
+    <meta charset="UTF-8">
+    <title>PowerBall</title>
 
-        <!-- Added link to the jQuery Library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Added a link to Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-                integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-                crossorigin="anonymous">
-        <!-- add link to css stylesheet that'll overide any previous css based on the bottom placement -->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- add link to css stylesheet that'll overide any previous css based on the bottom placement -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-        <!-- <div class="jumbotron">
+    <!-- <div class="jumbotron">
         <h1 id="mainTitle4" class="text-center">PowerBall!!</h1>
     </div> -->
-        <div id="pbContainer">
-                <!-- <div class="row" id="powerPlayNo"> -->
-                <div class="row" id="pb1">
-                        <div class="pbTicket" id="pb10">001</div>
-                        <div class="pbNumber" id="pb11"></div>
-                        <div class="pbNumber" id="pb12"></div>
-                        <div class="pbNumber" id="pb13"></div>
-                        <div class="pbNumber" id="pb14"></div>
-                        <div class="pbNumber" id="pb15"></div>
-                        <div class="pbLetters">PB</div>
-                        <div class="pbNum" id="pb16"></div>
-                        <!-- <div  class="pbTicket">Q6</div> -->
-                </div>
-                <div class="row" id="pb2">
-                        <div class="pbTicket" id="pb20">002</div>
-                        <div class="pbNumber" id="pb21"></div>
-                        <div class="pbNumber" id="pb22"></div>
-                        <div class="pbNumber" id="pb23"></div>
-                        <div class="pbNumber" id="pb24"></div>
-                        <div class="pbNumber" id="pb25"></div>
-                        <div class="pbLetters">PB</div>
-                        <div class="pbNum" id="pb26"></div>
-                        <!-- <div  class="pbTicket">Q6</div> -->
-                </div>
-                <div class="row" id="pb3">
-                        <div class="pbTicket" id="pb30">003</div>
-                        <div class="pbNumber" id="pb31"></div>
-                        <div class="pbNumber" id="pb32"></div>
-                        <div class="pbNumber" id="pb33"></div>
-                        <div class="pbNumber" id="pb34"></div>
-                        <div class="pbNumber" id="pb35"></div>
-                        <div class="pbLetters">PB</div>
-                        <div class="pbNum" id="pb36"></div>
-                        <!-- <div  class="pbTicket">Q6</div> -->
-                </div>
-                <div class="row" id="pb4">
-                        <div class="pbTicket" id="pb40">004</div>
-                        <div class="pbNumber" id="pb41"></div>
-                        <div class="pbNumber" id="pb42"></div>
-                        <div class="pbNumber" id="pb43"></div>
-                        <div class="pbNumber" id="pb44"></div>
-                        <div class="pbNumber" id="pb45"></div>
-                        <div class="pbLetters">PB</div>
-                        <div class="pbNum" id="pb46"></div>
-                        <!-- <div  class="pbTicket">Q6</div> -->
-                </div>
-                <div class="row" id="pb5">
-                        <div class="pbTicket" id="pb50">005</div>
-                        <div class="pbNumber" id="pb51"></div>
-                        <div class="pbNumber" id="pb52"></div>
-                        <div class="pbNumber" id="pb53"></div>
-                        <div class="pbNumber" id="pb54"></div>
-                        <div class="pbNumber" id="pb55"></div>
-                        <div class="pbLetters">PB</div>
-                        <div class="pbNum" id="pb56"></div>
-                        <!-- <div  class="pbTicket">Q6</div> -->
-                </div>
-                <!-- </div> -->
+    <div id="pbContainer">
+        <!-- <div class="row" id="powerPlayNo"> -->
+        <div class="row" id="pb1">
+            <div class="pbTicket" id="pb10">001</div>
+            <div class="pbNumber" id="pb11"></div>
+            <div class="pbNumber" id="pb12"></div>
+            <div class="pbNumber" id="pb13"></div>
+            <div class="pbNumber" id="pb14"></div>
+            <div class="pbNumber" id="pb15"></div>
+            <div class="pbLetters">PB</div>
+            <div class="pbNum" id="pb16"></div>
+            <!-- <div  class="pbTicket">Q6</div> -->
+        </div>
+        <div class="row" id="pb2">
+            <div class="pbTicket" id="pb20">002</div>
+            <div class="pbNumber" id="pb21"></div>
+            <div class="pbNumber" id="pb22"></div>
+            <div class="pbNumber" id="pb23"></div>
+            <div class="pbNumber" id="pb24"></div>
+            <div class="pbNumber" id="pb25"></div>
+            <div class="pbLetters">PB</div>
+            <div class="pbNum" id="pb26"></div>
+            <!-- <div  class="pbTicket">Q6</div> -->
+        </div>
+        <div class="row" id="pb3">
+            <div class="pbTicket" id="pb30">003</div>
+            <div class="pbNumber" id="pb31"></div>
+            <div class="pbNumber" id="pb32"></div>
+            <div class="pbNumber" id="pb33"></div>
+            <div class="pbNumber" id="pb34"></div>
+            <div class="pbNumber" id="pb35"></div>
+            <div class="pbLetters">PB</div>
+            <div class="pbNum" id="pb36"></div>
+            <!-- <div  class="pbTicket">Q6</div> -->
+        </div>
+        <div class="row" id="pb4">
+            <div class="pbTicket" id="pb40">004</div>
+            <div class="pbNumber" id="pb41"></div>
+            <div class="pbNumber" id="pb42"></div>
+            <div class="pbNumber" id="pb43"></div>
+            <div class="pbNumber" id="pb44"></div>
+            <div class="pbNumber" id="pb45"></div>
+            <div class="pbLetters">PB</div>
+            <div class="pbNum" id="pb46"></div>
+            <!-- <div  class="pbTicket">Q6</div> -->
+        </div>
+        <div class="row" id="pb5">
+            <div class="pbTicket" id="pb50">005</div>
+            <div class="pbNumber" id="pb51"></div>
+            <div class="pbNumber" id="pb52"></div>
+            <div class="pbNumber" id="pb53"></div>
+            <div class="pbNumber" id="pb54"></div>
+            <div class="pbNumber" id="pb55"></div>
+            <div class="pbLetters">PB</div>
+            <div class="pbNum" id="pb56"></div>
+            <!-- <div  class="pbTicket">Q6</div> -->
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <div id="pbContainerInput">
+        <div class="row" id="powerPlayNo1">
+            Choose Your Numbers or Select Randomly
         </div>
 
-        <div id="pbContainerInput">
-                <div class="row" id="powerPlayNo1">
-                        Choose Your Numbers or Select Randomly
-                </div>
 
+        <!-- This is where the powerball ticket number will be selected -->
+        <div id="ticketSelectorBox">
+            <button class="ticketSelector" id="ticket1" value="1" onclick="assignTicket1()">Ticket 1</button>
+            <button class="ticketSelector" id="ticket2" value="2" onclick="assignTicket2()">Ticket 2</button>
+            <button class="ticketSelector" id="ticket3" value="3" onclick="assignTicket3()">Ticket 3</button>
+            <button class="ticketSelector" id="ticket4" value="4" onclick="assignTicket4()">Ticket 4</button>
+            <button class="ticketSelector" id="ticket5" value="5" onclick="assignTicket5()">Ticket 5</button>
+            <button class="ticketSelector" id="ticket6" value="6" onclick="checkArray()">Check Array</button>
+        </div>
 
-                <!-- This is where the powerball ticket number will be selected -->
-                <div id="ticketSelectorBox">
-                        <button class="ticketSelector" id="ticket1" value="1" onclick="assignTicket1()">Ticket 1</button>
-                        <button class="ticketSelector" id="ticket2" value="2" onclick="assignTicket2()">Ticket 2</button>
-                        <button class="ticketSelector" id="ticket3" value="3" onclick="assignTicket3()">Ticket 3</button>
-                        <button class="ticketSelector" id="ticket4" value="4" onclick="assignTicket4()">Ticket 4</button>
-                        <button class="ticketSelector" id="ticket5" value="5" onclick="assignTicket5()">Ticket 5</button>
-                        <button class="ticketSelector" id="ticket6" value="6" onclick="checkArray()">Check Array</button>
-                </div>
-
-                <div id="currentlySelectedBox">
-
-
-                </div>
-
-
-                <div class="row" id="powerPlayNo3">
-                        #1 #2 #3 #4 #5 PB
-                </div>
-
-                <div class="row" id="powerPlayNo2">
-
-                        <!-- <form id=formInput> -->
-                                <input class="powerBallsubmit" id="powerBallsubmitBuffer" type="number" name="num1"
-                                        min="1" max="69" required>
-                                <input class="powerBallsubmit" type="number" name="num2" min="1" max="69" required>
-                                <input class="powerBallsubmit" type="number" name="num3" min="1" max="69" required>
-                                <input class="powerBallsubmit" type="number" name="num4" min="1" max="69" required>
-                                <input class="powerBallsubmit" type="number" name="num5" min="1" max="69" required>
-                                <input class="powerBallsubmit" type="number" name="numPB" min="1" max="26" required>
-                                <input type="button" id="PBsubmit" value="Add" onclick="getNumbers()">
-                                <input type="button" id="PbRandom" value="Random"  onclick="getNumbers()">
-
-                        <!-- </form> -->
-                </div>
-
-                <div class="resultsRow" id="resultsRow0">
-                        <div class="match">Match</div>
-                        <div class="prize">Prize</div>
-                        <div class="timesHit">Times Hit</div>
-                        <div class="totalWon">Total Won</div>
-                        <div class="odds">Odds</div>
-
-                </div>
-
-                <div class="resultsRow" id="resultsRow1">
-                        <div class="match">5+PB</div>
-                        <div class="prize">Jackpot</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">292201338.00</div>
-
-                </div>
-
-                <div class="resultsRow" id="resultsRow2">
-                        <div class="match">5-PB</div>
-                        <div class="prize">$1,000,000</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">11688053.52</div>
-                </div>
-
-                <div class="resultsRow" id="resultsRow3">
-                        <div class="match">4+PB</div>
-                        <div class="prize">$50,000</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">913129.18</div>
-                </div>
-                <div class="resultsRow" id="resultsRow4">
-                        <div class="match">4-PB</div>
-                        <div class="prize">$100</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">36525.17</div>
-                </div>
-                <div class="resultsRow" id="resultsRow5">
-                        <div class="match">3+PB</div>
-                        <div class="prize">$100</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">14494.11</div>
-                </div>
-                <div class="resultsRow" id="resultsRow6">
-                        <div class="match">3-PB</div>
-                        <div class="prize">$7</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">579.76</div>
-                </div>
-                <div class="resultsRow" id="resultsRow7">
-                        <div class="match">2+PB</div>
-                        <div class="prize">$7</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">701.33</div>
-                </div>
-                <div class="resultsRow" id="resultsRow8">
-                        <div class="match">1+PB</div>
-                        <div class="prize">$4</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">91.98</div>
-                </div>
-                <div class="resultsRow" id="resultsRow9">
-                        <div class="match">PB</div>
-                        <div class="prize">$4</div>
-                        <div class="timesHit">0</div>
-                        <div class="totalWon">$0</div>
-                        <div class="odds">38.32</div>
-                </div>
-
-                <!-- results for lottery simulation -->
-                <div id="ticketsPlayed">Tickets Played</div>
-                <div id="netResults">Net Results</div>
-                <div id="ticketsPlayed2"></div>
-                <div id="netResults2"></div>
-               
-                <!-- buttons to control the lottery simulation -->
-                <div>
-                    How many Days?<input id="howManyDays" type="number"  min="1"  required>
-
-                    <button onclick="addDays()">Add Days</button>
-                    <button onclick="checkTicketsForMatches()">Simulate Lottery</button>
-                </div>
-
-                <!-- data to check lottery simulation results -->
-                
-                <div id="pbDrawingNumbers1"></div>
-                <div id="pbDrawingNumbers2"></div>
-                <div id="pbDrawingNumbers3"></div>
-                <div id="pbDrawingNumbers4"></div>
-                <div id="pbDrawingNumbers5"></div>
-                <div id="pbDrawingNumbersPB"></div>
+        <div id="currentlySelectedBox">
 
 
         </div>
 
 
+        <div class="row" id="powerPlayNo3">
+            #1 #2 #3 #4 #5 PB
+        </div>
+
+        <div class="row" id="powerPlayNo2">
+
+            <!-- <form id=formInput> -->
+            <input class="powerBallsubmit" id="powerBallsubmitBuffer" type="number" name="num1" min="1" max="69"
+                required>
+            <input class="powerBallsubmit" type="number" name="num2" min="1" max="69" required>
+            <input class="powerBallsubmit" type="number" name="num3" min="1" max="69" required>
+            <input class="powerBallsubmit" type="number" name="num4" min="1" max="69" required>
+            <input class="powerBallsubmit" type="number" name="num5" min="1" max="69" required>
+            <input class="powerBallsubmit" type="number" name="numPB" min="1" max="26" required>
+            <input type="button" id="PBsubmit" value="Add" onclick="getNumbers()">
+            <input type="button" id="PbRandom" value="Random" onclick="getNumbers()">
+
+            <!-- </form> -->
+        </div>
+
+        <div class="resultsRow" id="resultsRow0">
+            <div class="match">Match</div>
+            <div class="prize">Prize</div>
+            <div class="timesHit">Times Hit</div>
+            <div class="totalWon">Total Won</div>
+            <div class="odds">Odds</div>
+
+        </div>
+
+        <div class="resultsRow" id="resultsRow1">
+            <div class="match">5+PB</div>
+            <div class="prize">Jackpot</div>
+            <div class="timesHit" id="5+pb">0</div>
+            <div class="totalWon" id="5+pbWon">0</div>
+            <div class="odds">292201338.00</div>
+
+        </div>
+
+        <div class="resultsRow" id="resultsRow2">
+            <div class="match">5-PB</div>
+            <div class="prize">$1,000,000</div>
+            <div class="timesHit" id="5-pb">0</div>
+            <div class="totalWon" id="5-pbWon">0</div>
+            <div class="odds">11688053.52</div>
+        </div>
+
+        <div class="resultsRow" id="resultsRow3">
+            <div class="match">4+PB</div>
+            <div class="prize">$50,000</div>
+            <div class="timesHit" id="4+pb">0</div>
+            <div class="totalWon" id="4+pbWon">0</div>
+            <div class="odds">913129.18</div>
+        </div>
+        <div class="resultsRow" id="resultsRow4">
+            <div class="match">4-PB</div>
+            <div class="prize">$100</div>
+            <div class="timesHit" id="4-pb">0</div>
+            <div class="totalWon" id="4-pbWon">0</div>
+            <div class="odds">36525.17</div>
+        </div>
+        <div class="resultsRow" id="resultsRow5">
+            <div class="match">3+PB</div>
+            <div class="prize">$100</div>
+            <div class="timesHit" id="3+pb">0</div>
+            <div class="totalWon" id="3+pbWon">0</div>
+            <div class="odds">14494.11</div>
+        </div>
+        <div class="resultsRow" id="resultsRow6">
+            <div class="match">3-PB</div>
+            <div class="prize">$7</div>
+            <div class="timesHit" id="3-pb">0</div>
+            <div class="totalWon" id="3-pbWon">0</div>
+            <div class="odds">579.76</div>
+        </div>
+        <div class="resultsRow" id="resultsRow7">
+            <div class="match">2+PB</div>
+            <div class="prize">$7</div>
+            <div class="timesHit" id="2+pb">0</div>
+            <div class="totalWon" id="2+pbWon">0</div>
+            <div class="odds">701.33</div>
+        </div>
+        <div class="resultsRow" id="resultsRow8">
+            <div class="match">1+PB</div>
+            <div class="prize">$4</div>
+            <div class="timesHit" id="1+pb">0</div>
+            <div class="totalWon" id="1+pbWon">0</div>
+            <div class="odds">91.98</div>
+        </div>
+        <div class="resultsRow" id="resultsRow9">
+            <div class="match">PB</div>
+            <div class="prize">$4</div>
+            <div class="timesHit" id="0+pb">0</div>
+            <div class="totalWon" id="0+pbWon">0</div>
+            <div class="odds">38.32</div>
+        </div>
+
+        <!-- results for lottery simulation -->
+        <div id="ticketsPlayed" style="vertical-align: bottom">Tickets Played</div>
+        <div id="lotteryWinnings">Lottery Winnings</div>
+        <div id="ticketsPlayed2"></div>
+        <div id="lotteryWinnings2"></div>
+        <div id="costOfTickets">Cost of Tickets</div>
+        <div id="netResults">Net Results</div>
+        <div id="costOfTickets2"></div>
+        <div id="netResults2"></div>
+        <div id="numberOfDaysToSimulate">Number Drawings To Simulate</div>
+        <div id="numberOfDaysToSimulate2" style="vertical-align: middle"></div>
+
+        <!-- buttons to control the lottery simulation -->
+        <div>
+            How many Days?<input id="howManyDays" type="number" min="1" required>
+
+            <button onclick="addDays()">Change Lotto Drawings</button>
+            <button onclick="checkTicketsForMatches()">Simulate Lottery</button>
+        </div>
+
+        <!-- data to check lottery simulation results -->
+
+        <div id="pbDrawingNumbers1"></div>
+        <div id="pbDrawingNumbers2"></div>
+        <div id="pbDrawingNumbers3"></div>
+        <div id="pbDrawingNumbers4"></div>
+        <div id="pbDrawingNumbers5"></div>
+        <div id="pbDrawingNumbersPB"></div>
 
 
-        <script>
-                var t1n1, t1n2, t1n3, t1n4, t1n5, t1pb
-                var t2n1, t2n2, t2n3, t2n4, t2n5, t2pb
-                var t3n1, t3n2, t3n3, t3n4, t3n5, t3pb
-                var t4n1, t4n2, t4n3, t4n4, t4n5, t4pb
-                var t5n1, t5n2, t5n3, t5n4, t5n5, t5pb
-                var cBoxNum
-                var ticket1numbers = [];
-                var ticket2numbers = [];
-                var ticket3numbers = [];
-                var ticket4numbers = [];
-                var ticket5numbers = [];
-                var arr;
-                var resultsArray = []
-                var numberOfDays = 1;
-                var fivePlusPb = 0;
-                var fiveMinusPb =0;
-                var fourPlusPb = 0;
-                var fourMinusPb =0;
-                var threePlusPb = 0;
-                var threeMinusPb =0;
-                var twoPlusPb = 0;
-                var onePlusPb = 0;
-                var onlyPb = 0;
-                var matchCounter=0;
-                var powerballCounter=0;
-                var allTickets = [ticket1numbers, ticket2numbers, ticket3numbers, ticket4numbers, ticket5numbers];
+    </div>
 
 
-                function addDays() {
-                        numberOfDays = Number(document.getElementById("howManyDays").value);
-                        console.log(numberOfDays);
+
+
+    <script>
+        var cBoxNum
+        var ticket1numbers = [];
+        var ticket2numbers = [];
+        var ticket3numbers = [];
+        var ticket4numbers = [];
+        var ticket5numbers = [];
+        var arr;
+        var resultsArray = []
+        var fivePlusPb = 0;
+        var fiveMinusPb = 0;
+        var fourPlusPb = 0;
+        var fourMinusPb = 0;
+        var threePlusPb = 0;
+        var threeMinusPb = 0;
+        var twoPlusPb = 0;
+        var onePlusPb = 0;
+        var onlyPb = 0;
+        var fivePlusPbWinnings = 0;
+        var fiveMinusPbWinnings = 0;
+        var fourPlusPbWinnings = 0;
+        var fourMinusPbWinnings = 0;
+        var threePlusPbWinnings = 0;
+        var threeMinusPbWinnings = 0;
+        var twoPlusPbWinnings = 0;
+        var onePlusPbWinnings = 0;
+        var onlyPbWinnings = 0;
+        var matchCounter = 0;
+        var powerballCounter = 0;
+        var allTickets = [ticket1numbers, ticket2numbers, ticket3numbers, ticket4numbers, ticket5numbers];
+        var totalWinnings = 0;
+        var timesPlayed = 0;
+        var costOfPlaying = 0;
+        var netWinnings = 0;
+        var numberOfDays = 1000;
+        
+        assignTicket1();
+        checkTicketsForMatches();
+        document.getElementById("numberOfDaysToSimulate2").innerHTML = numberOfDays;
+
+        function addDays() {
+            numberOfDays = Number(document.getElementById("howManyDays").value);
+            document.getElementById("numberOfDaysToSimulate2").innerHTML = numberOfDays;
+            // console.log(numberOfDays);
+        }
+
+        function assignTicket1() {
+            cBoxNum = 1;
+            assignTicketNumber();
+            getNumbers();   
+            assignTicket2();                
+        }
+
+        function assignTicket2() {
+            cBoxNum = 2;
+            assignTicketNumber();
+            getNumbers();  
+            assignTicket3();    
+        }
+
+        function assignTicket3() {
+            cBoxNum = 3;
+            assignTicketNumber();
+            getNumbers();  
+            assignTicket4();  
+        }
+
+        function assignTicket4() {
+            cBoxNum = 4;
+            assignTicketNumber();
+            getNumbers();  
+            assignTicket5();  
+        }
+
+        function assignTicket5() {
+            cBoxNum = 5;
+            assignTicketNumber();
+            getNumbers();  
+        }
+
+        function assignTicketNumber() {
+            document.getElementById("currentlySelectedBox").innerHTML = "The Current Ticket is Number " + cBoxNum;
+        }
+
+        function checkArray() {
+            document.getElementById("currentlySelectedBox").innerHTML = "(" + ticket1numbers + ")" + " " + "(" +
+                ticket2numbers + ")" + " " + "(" + ticket3numbers + ")" + " " + "(" + ticket4numbers + ")" + " " + "(" +
+                ticket5numbers + ")";
+        }
+
+
+
+        // function to get a random number 1 through 69 and 1 through 26 for the powerball
+        function getNumbers() {
+            var num1 = Math.floor((Math.random() * 69) + 1);
+            var num2 = Math.floor((Math.random() * 69) + 1);
+            var num3 = Math.floor((Math.random() * 69) + 1);
+            var num4 = Math.floor((Math.random() * 69) + 1);
+            var num5 = Math.floor((Math.random() * 69) + 1);
+            var numPB = Math.floor((Math.random() * 26) + 1);
+
+            // this code makes sure non of the non powerball numbers are the same
+            while (num2 === num1) {
+                var num2 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num3 === num2 || num3 === num1) {
+                var num3 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num4 === num3 || num4 === num2 || num4 === num1) {
+                var num4 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num5 === num4 || num5 === num3 || num5 === num2 || num5 === num1) {
+                var num5 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            //add numbers to an array after same number check
+            var arr = [num1, num2, num3, num4, num5];
+
+            // bubble sorting the array to put them in numerical order
+            function swap(arr, first_Index, second_Index) {
+                var temp = arr[first_Index];
+                arr[first_Index] = arr[second_Index];
+                arr[second_Index] = temp;
+            }
+
+            function bubble_Sort(arr) {
+
+                var len = arr.length,
+                    i, j, stop;
+
+                for (i = 0; i < len; i++) {
+                    for (j = 0, stop = len - i; j < stop; j++) {
+                        if (arr[j] > arr[j + 1]) {
+                            swap(arr, j, j + 1);
+                        }
+                    }
+                }
+            }
+            //run the function to make sure non powerball numbers are in numerical order
+            bubble_Sort(arr);
+            // add the powerball number to the end of the array
+            arr.push(numPB);
+
+
+            // assign the ticket numbers to an array to be checked later
+            if (cBoxNum === 1) {
+                ticket1numbers = arr;
+                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 1 numbers " +
+                    ticket1numbers;
+                allTickets.splice(0, 1, arr);
+            }
+            if (cBoxNum === 2) {
+                ticket2numbers = arr;
+                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 2 numbers " +
+                    ticket2numbers;
+                allTickets.splice(1, 1, arr);
+            }
+            if (cBoxNum === 3) {
+                ticket3numbers = arr;
+                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 3 numbers " +
+                    ticket3numbers;
+                allTickets.splice(2, 1, arr);
+            }
+            if (cBoxNum === 4) {
+                ticket4numbers = arr;
+                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 4 numbers " +
+                    ticket4numbers;
+                allTickets.splice(3, 1, arr);
+            }
+            if (cBoxNum === 5) {
+                ticket5numbers = arr;
+                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 5 numbers " +
+                    ticket5numbers;
+                allTickets.splice(4, 1, arr);
+            }
+
+
+
+            // add a 0 to any number that is less than 10 so it looks like a real powerball ticket number
+            // also depending on what the current value of cBoxNum, add the numbers to that row on the powerball ticket
+            if (arr[0] < 10) {
+                document.getElementById("pb" + cBoxNum + "1").innerHTML = "0" + arr[0];
+            } else {
+                document.getElementById("pb" + cBoxNum + "1").innerHTML = arr[0];
+            }
+            if (arr[1] < 10) {
+                document.getElementById("pb" + cBoxNum + "2").innerHTML = "0" + arr[1];
+            } else {
+                document.getElementById("pb" + cBoxNum + "2").innerHTML = arr[1];
+            }
+            if (arr[2] < 10) {
+                document.getElementById("pb" + cBoxNum + "3").innerHTML = "0" + arr[2];
+            } else {
+                document.getElementById("pb" + cBoxNum + "3").innerHTML = arr[2];
+            }
+            if (arr[3] < 10) {
+                document.getElementById("pb" + cBoxNum + "4").innerHTML = "0" + arr[3];
+            } else {
+                document.getElementById("pb" + cBoxNum + "4").innerHTML = arr[3];
+            }
+            if (arr[4] < 10) {
+                document.getElementById("pb" + cBoxNum + "5").innerHTML = "0" + arr[4];
+            } else {
+                document.getElementById("pb" + cBoxNum + "5").innerHTML = arr[4];
+            }
+            if (numPB < 10) {
+                document.getElementById("pb" + cBoxNum + "6").innerHTML = "0" + numPB;
+            } else {
+                document.getElementById("pb" + cBoxNum + "6").innerHTML = numPB;
+            }
+
+            // end of getNumbers function
+        }
+
+        function simulateLottery() {
+            var num1 = Math.floor((Math.random() * 69) + 1);
+            var num2 = Math.floor((Math.random() * 69) + 1);
+            var num3 = Math.floor((Math.random() * 69) + 1);
+            var num4 = Math.floor((Math.random() * 69) + 1);
+            var num5 = Math.floor((Math.random() * 69) + 1);
+            var numPB = Math.floor((Math.random() * 26) + 1);
+
+            // this code makes sure non of the non powerball numbers are the same
+            while (num2 === num1) {
+                var num2 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num3 === num2 || num3 === num1) {
+                var num3 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num4 === num3 || num4 === num2 || num4 === num1) {
+                var num4 = Math.floor((Math.random() * 69) + 1);
+            }
+
+            while (num5 === num4 || num5 === num3 || num5 === num2 || num5 === num1) {
+                var num5 = Math.floor((Math.random() * 69) + 1);
+            }
+
+
+
+            //add numbers to an array after same number check
+            resultsArray = [num1, num2, num3, num4, num5];
+
+            function swap(arr, first_Index, second_Index) {
+                var temp = arr[first_Index];
+                arr[first_Index] = arr[second_Index];
+                arr[second_Index] = temp;
+            }
+
+            function bubble_Sort(arr) {
+
+                var len = arr.length,
+                    i, j, stop;
+
+                for (i = 0; i < len; i++) {
+                    for (j = 0, stop = len - i; j < stop; j++) {
+                        if (arr[j] > arr[j + 1]) {
+                            swap(arr, j, j + 1);
+                        }
+                    }
+                }
+            }
+
+            bubble_Sort(resultsArray);
+            resultsArray.push(numPB);
+
+
+            document.getElementById("pbDrawingNumbers1").innerHTML = resultsArray[0];
+            document.getElementById("pbDrawingNumbers2").innerHTML = resultsArray[1];
+            document.getElementById("pbDrawingNumbers3").innerHTML = resultsArray[2];
+            document.getElementById("pbDrawingNumbers4").innerHTML = resultsArray[3];
+            document.getElementById("pbDrawingNumbers5").innerHTML = resultsArray[4];
+            document.getElementById("pbDrawingNumbersPB").innerHTML = resultsArray[5];
+
+        }
+
+        function resetMatches() {
+            matchCounter = 0;
+            powerballCounter = 0;
+        }
+
+        function checkTicketsForMatches() {
+
+            for (i = 0; i < numberOfDays; i++) {
+                // console.log(allTickets);
+                timesPlayed = timesPlayed + 5;
+                costOfPlaying = timesPlayed * 2;
+                simulateLottery();
+                // console.log("Drawing number " + (i+1) + "'s winning Lottery Numbers are " + resultsArray);
+
+                //create a for loop to check all the tickets
+                for (j = 0; j < 5; j++) {
+
+                    //create another for loop to check through all the numbers of the tickets
+
+                    // for (k=0; k<5; k++) {
+                    if (resultsArray[0] === allTickets[j][0]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[0] === allTickets[j][1]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[0] === allTickets[j][2]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[0] === allTickets[j][3]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[0] === allTickets[j][4]) {
+                        matchCounter++
+                    };
+
+                    if (resultsArray[1] === allTickets[j][0]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[1] === allTickets[j][1]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[1] === allTickets[j][2]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[1] === allTickets[j][3]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[1] === allTickets[j][4]) {
+                        matchCounter++
+                    };
+
+                    if (resultsArray[2] === allTickets[j][0]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[2] === allTickets[j][1]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[2] === allTickets[j][2]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[2] === allTickets[j][3]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[2] === allTickets[j][4]) {
+                        matchCounter++
+                    };
+
+                    if (resultsArray[3] === allTickets[j][0]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[3] === allTickets[j][1]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[3] === allTickets[j][2]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[3] === allTickets[j][3]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[3] === allTickets[j][4]) {
+                        matchCounter++
+                    };
+
+                    if (resultsArray[4] === allTickets[j][0]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[4] === allTickets[j][1]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[4] === allTickets[j][2]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[4] === allTickets[j][3]) {
+                        matchCounter++
+                    };
+                    if (resultsArray[4] === allTickets[j][4]) {
+                        matchCounter++
+                    };
+                    // console.log("match counter is now equal to " + matchCounter);
+
+                    // after the 5 regular numbers are checked, check the powerball numbers    
+                    if (resultsArray[5] === allTickets[j][5]) {
+                        powerballCounter = 1
+                    };
+
+
+                    //now an if statement to check results and add them to the counters
+                    if (matchCounter === 5 && powerballCounter === 1) {
+                        fivePlusPb++;
+                        document.getElementById("5+pb").innerHTML = fivePlusPb;
+                        fivePlusPbWinnings = 200000000 * fivePlusPb;
+                        document.getElementById("5+pbWon").innerHTML = "$" + fivePlusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 5 && powerballCounter === 0) {
+                        fiveMinusPb++
+                        document.getElementById("5-pb").innerHTML = fiveMinusPb;
+                        fiveMinusPbWinnings = 1000000 * fiveMinusPb;
+                        document.getElementById("5-pbWon").innerHTML = "$" + fiveMinusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 4 && powerballCounter === 1) {
+                        fourPlusPb++;
+                        document.getElementById("4+pb").innerHTML = fourPlusPb;
+                        fourPlusPbWinnings = 50000 * fourPlusPb;
+                        document.getElementById("4+pbWon").innerHTML = "$" + fourPlusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 4 && powerballCounter === 0) {
+                        fourMinusPb++;
+                        document.getElementById("4-pb").innerHTML = fourMinusPb;
+                        fourMinusPbWinnings = 100 * fourMinusPb;
+                        document.getElementById("4-pbWon").innerHTML = "$" + fourMinusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 3 && powerballCounter === 1) {
+                        threePlusPb++;
+                        document.getElementById("3+pb").innerHTML = threePlusPb;
+                        threePlusPbWinnings = 100 * threePlusPb;
+                        document.getElementById("3+pbWon").innerHTML = "$" + threePlusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 3 && powerballCounter === 0) {
+                        threeMinusPb++;
+                        document.getElementById("3-pb").innerHTML = threeMinusPb;
+                        threeMinusPbWinnings = threeMinusPb * 7;
+                        document.getElementById("3-pbWon").innerHTML = "$" + threeMinusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 2 && powerballCounter === 1) {
+                        twoPlusPb++;
+                        document.getElementById("2+pb").innerHTML = twoPlusPb;
+                        twoPlusPbWinnings = twoPlusPb * 7;
+                        document.getElementById("2+pbWon").innerHTML = "$" + twoPlusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 1 && powerballCounter === 1) {
+                        onePlusPb++;
+                        document.getElementById("1+pb").innerHTML = onePlusPb;
+                        onePlusPbWinnings = onePlusPb * 4;
+                        document.getElementById("1+pbWon").innerHTML = "$" + onePlusPbWinnings.toLocaleString('en');
+                    };
+
+                    if (matchCounter === 0 && powerballCounter === 1) {
+                        onlyPb++;
+                        document.getElementById("0+pb").innerHTML = onlyPb;
+                        onlyPbWinnings = onlyPb * 4;
+                        document.getElementById("0+pbWon").innerHTML = "$" + onlyPbWinnings.toLocaleString('en');
+                    };
+
+                    totalWinnings = fivePlusPbWinnings + fiveMinusPbWinnings + fourMinusPbWinnings +
+                        fourPlusPbWinnings + threeMinusPbWinnings + threePlusPbWinnings + twoPlusPbWinnings +
+                        onePlusPbWinnings + onlyPbWinnings;
+
+                    netWinnings = totalWinnings - costOfPlaying;
+
+                    document.getElementById("netResults2").innerHTML = "$" + netWinnings.toLocaleString('en');
+                    document.getElementById("ticketsPlayed2").innerHTML = timesPlayed.toLocaleString('en');
+                    document.getElementById("costOfTickets2").innerHTML = "$" + costOfPlaying.toLocaleString('en');
+                    document.getElementById("lotteryWinnings2").innerHTML = "$" + totalWinnings.toLocaleString('en');
+
+
+
+                    // console.log(j+1 + " match counter = " + matchCounter);
+                    // }
+                    resetMatches();
                 }
 
-                function assignTicket1() {
-                        cBoxNum=1;
-                        if(cBoxNum=1) {
-                                assignTicketNumber();
-                        }
-                        assignTicketNumber();
-                }
+            }
 
-                function assignTicket2() {
-                        cBoxNum=2;
-                        assignTicketNumber();
-                }
-
-                function assignTicket3() {
-                        cBoxNum=3;
-                        assignTicketNumber();
-                }
-
-                function assignTicket4() {
-                        cBoxNum=4;
-                        assignTicketNumber();
-                }
-
-                function assignTicket5() {
-                        cBoxNum=5;
-                        assignTicketNumber();
-                }
-
-                function assignTicketNumber() {
-                        document.getElementById("currentlySelectedBox").innerHTML = "The Current Ticket is Number " + cBoxNum;
-                }
-
-                function checkArray() {
-                        document.getElementById("currentlySelectedBox").innerHTML = "("+ticket1numbers+")" +" "+ "("+ticket2numbers+")" +" "+ "("+ticket3numbers+")" +" "+ "("+ticket4numbers+")" +" "+ "("+ticket5numbers+")";                                                                 
-                }
-
-
-
-                // function to get a random number 1 through 69 and 1 through 26 for the powerball
-                function getNumbers() {
-                        var num1 = Math.floor((Math.random() * 69) + 1);
-                        var num2 = Math.floor((Math.random() * 69) + 1);
-                        var num3 = Math.floor((Math.random() * 69) + 1);
-                        var num4 = Math.floor((Math.random() * 69) + 1);
-                        var num5 = Math.floor((Math.random() * 69) + 1);
-                        var numPB = Math.floor((Math.random() * 26) + 1);
-
-                        // this code makes sure non of the non powerball numbers are the same
-                        while (num2 === num1) {
-                                var num2 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num3 === num2 || num3 === num1) {
-                                var num3 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num4 === num3 || num4 === num2 || num4 === num1) {
-                                var num4 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num5 === num4 || num5 === num3 || num5 === num2 || num5 === num1) {
-                                var num5 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        //add numbers to an array after same number check
-                        var arr = [num1, num2, num3, num4, num5];
-
-                        // bubble sorting the array to put them in numerical order
-                        function swap(arr, first_Index, second_Index) {
-                                var temp = arr[first_Index];
-                                arr[first_Index] = arr[second_Index];
-                                arr[second_Index] = temp;
-                        }
-
-                        function bubble_Sort(arr) {
-
-                                var len = arr.length,
-                                        i, j, stop;
-
-                                for (i = 0; i < len; i++) {
-                                        for (j = 0, stop = len - i; j < stop; j++) {
-                                                if (arr[j] > arr[j + 1]) {
-                                                        swap(arr, j, j + 1);
-                                                }
-                                        }
-                                }
-                        }
-                        //run the function to make sure non powerball numbers are in numerical order
-                        bubble_Sort(arr);
-                        // add the powerball number to the end of the array
-                        arr.push(numPB);
-
-
-                        // assign the ticket numbers to an array to be checked later
-                        if (cBoxNum===1) {
-                            ticket1numbers = arr;
-                                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 1 numbers " + ticket1numbers;
-                                allTickets.splice(0,1,arr);
-                        } 
-                        if (cBoxNum===2) {
-                            ticket2numbers = arr;
-                                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 2 numbers " + ticket2numbers;
-                                allTickets.splice(1,1,arr);
-                        } 
-                        if (cBoxNum===3) {
-                            ticket3numbers = arr;
-                                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 3 numbers " + ticket3numbers;
-                                allTickets.splice(2,1,arr);
-                        } 
-                        if (cBoxNum===4) {
-                            ticket4numbers = arr;
-                                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 4 numbers " + ticket4numbers;
-                                allTickets.splice(3,1,arr);
-                        } 
-                        if (cBoxNum===5) {
-                            ticket5numbers = arr;
-                                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 5 numbers " + ticket5numbers;
-                                allTickets.splice(4,1,arr);
-                        } 
-                      
-
-
-                        // add a 0 to any number that is less than 10 so it looks like a real powerball ticket number
-                        // also depending on what the current value of cBoxNum, add the numbers to that row on the powerball ticket
-                        if (arr[0] < 10) {
-                                document.getElementById("pb"+cBoxNum+"1").innerHTML = "0" + arr[0];
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"1").innerHTML = arr[0];
-                        }
-                        if (arr[1] < 10) {
-                                document.getElementById("pb"+cBoxNum+"2").innerHTML = "0" + arr[1];
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"2").innerHTML = arr[1];
-                        }
-                        if (arr[2] < 10) {
-                                document.getElementById("pb"+cBoxNum+"3").innerHTML = "0" + arr[2];
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"3").innerHTML = arr[2];
-                        }
-                        if (arr[3] < 10) {
-                                document.getElementById("pb"+cBoxNum+"4").innerHTML = "0" + arr[3];
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"4").innerHTML = arr[3];
-                        }
-                        if (arr[4] < 10) {
-                                document.getElementById("pb"+cBoxNum+"5").innerHTML = "0" + arr[4];
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"5").innerHTML = arr[4];
-                        }
-                        if (numPB < 10) {
-                                document.getElementById("pb"+cBoxNum+"6").innerHTML ="0" + numPB;
-                        } else {
-                                document.getElementById("pb"+cBoxNum+"6").innerHTML = numPB;
-                        }
-
-                        // end of getNumbers function
-                }
-
-                function simulateLottery() {
-                    var num1 = Math.floor((Math.random() * 69) + 1);
-                        var num2 = Math.floor((Math.random() * 69) + 1);
-                        var num3 = Math.floor((Math.random() * 69) + 1);
-                        var num4 = Math.floor((Math.random() * 69) + 1);
-                        var num5 = Math.floor((Math.random() * 69) + 1);
-                        var numPB = Math.floor((Math.random() * 26) + 1);
-
-                        // this code makes sure non of the non powerball numbers are the same
-                        while (num2 === num1) {
-                                var num2 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num3 === num2 || num3 === num1) {
-                                var num3 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num4 === num3 || num4 === num2 || num4 === num1) {
-                                var num4 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        while (num5 === num4 || num5 === num3 || num5 === num2 || num5 === num1) {
-                                var num5 = Math.floor((Math.random() * 69) + 1);
-                        }
-
-                        
-
-                        //add numbers to an array after same number check
-                        resultsArray = [num1, num2, num3, num4, num5];
-
-                        function swap(arr, first_Index, second_Index) {
-                                var temp = arr[first_Index];
-                                arr[first_Index] = arr[second_Index];
-                                arr[second_Index] = temp;
-                        }
-
-                        function bubble_Sort(arr) {
-
-                                var len = arr.length,
-                                        i, j, stop;
-
-                                for (i = 0; i < len; i++) {
-                                        for (j = 0, stop = len - i; j < stop; j++) {
-                                                if (arr[j] > arr[j + 1]) {
-                                                        swap(arr, j, j + 1);
-                                                }
-                                        }
-                                }
-                        }
-
-                        bubble_Sort(resultsArray);
-                        resultsArray.push(numPB);
-
-
-                        document.getElementById("pbDrawingNumbers1").innerHTML = resultsArray[0];
-                        document.getElementById("pbDrawingNumbers2").innerHTML = resultsArray[1];
-                        document.getElementById("pbDrawingNumbers3").innerHTML = resultsArray[2];
-                        document.getElementById("pbDrawingNumbers4").innerHTML = resultsArray[3];
-                        document.getElementById("pbDrawingNumbers5").innerHTML = resultsArray[4];
-                        document.getElementById("pbDrawingNumbersPB").innerHTML = resultsArray[5];
-
-                        // console.log(resultsArray);
-                        // console.log("Ticket #1 : " + ticket1numbers);
-                        // console.log("Ticket #2 : " + ticket2numbers);
-                        // console.log("Ticket #3 : " + ticket3numbers);
-                        // console.log("Ticket #4 : " + ticket4numbers);
-                        // console.log("Ticket #5 : " + ticket5numbers);
-                     
-
-
-                //      for (i=0; i<5; i++) {
-                //         if (allTickets[i].length === 6) {
-                //                 console.log("lottery ticket " + (i+1) + " is in play");
-                //         }
-                //      }
-                }
-
-
-                     function checkTicketsForMatches() {
-
-                        for (i=0; i<numberOfDays; i++) {
-                                simulateLottery();
-                                console.log("Drawing number " + (i+1) + "'s winning Lottery Numbers are " + resultsArray);
-                        //       for (j=0; j<resultsArray.length+1; j++ ) {
-                        //               if ( (resultsArray[j] = ticket1numbers[0]) ||
-                        //               (resultsArray[j] = ticket1numbers[1]) ||
-                        //               (resultsArray[j] = ticket1numbers[2]) ||
-                        //               (resultsArray[j] = ticket1numbers[3]) ||
-                        //               (resultsArray[j] = ticket1numbers[4]) ) {
-                        //                       matchCounter++;
-                        //               }
-                        //       }
-                        }
-
-                                // if ( (resultsArray[0] === ticket1numbers[0]) ||
-                                //      (resultsArray[0] === ticket1numbers[1]) ||
-                                //      (resultsArray[0] === ticket1numbers[2]) || 
-                                //      (resultsArray[0] === ticket1numbers[3]) ||
-                                //      (resultsArray[0] === ticket1numbers[4]) ) {
-                                //         matchCounter++;
-                                //         console.log(matchCounter + " numbers matched");
-                                    
-                                }
-                               
-
-                                // console.log(matchCounter + " numbers matched");
-
-                                // matchCounter = 0;
-
-
-
-                                // Now to add the code to check the tickets versus the powerball
-
-
-                        
-
-
-                //      }
-
-                     
-
-
-
-        //end of simulate lottery function 
-                
-
-
-        </script>
+        }
+    </script>
 
 </body>

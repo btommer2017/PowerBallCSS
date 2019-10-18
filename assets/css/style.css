@@ -155,13 +155,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #powerPlayNo3 {
-    height: 15px;
+    height: 25px;
     width: 100%;
-    background-color: rgb(157, 208, 169);
+    background-color: rgb(40, 99, 101);
+    color: aliceblue;
     margin: 0%;
     border: 0%;
     padding: 0%;
     text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
 }
 
 #powerPlayNo {
@@ -180,6 +183,41 @@ input[type=number]::-webkit-outer-spin-button {
     height: 40px;
     background-color: bisque;
 }
+
+#currentlySelectedBoxText {
+    float: left;
+    height: 40px;
+    width: 25%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.inputNumberBox{
+    width: 6%;
+    float: left;
+    margin-right: 2.3%;
+    margin-top: 3px;
+    height: 70%;
+  }
+#inputNumberBoxPb{
+    width: 6%;
+    float: left;
+    margin-right: 2.3%;
+    margin-top: 3px;
+    height: 70%;
+    background-color:red;
+    color: white;
+}
+
+#inputNumberBoxSubmit {
+    width: 20%;
+    float: left;
+    margin-top: 3px;
+    height: 70%;
+}
+
+
 
 #pbContainer2 {
     /* background-image: url(../images/PB.jpg); */
@@ -293,8 +331,33 @@ input[type=number]::-webkit-outer-spin-button {
     height: 25px;
     width: 50%;
     float: left;
+    text-align: center;
+    background-color: rgb(40, 99, 101);
+    color: aliceblue;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+#lotteryWinnings {
+    height: 25px;
+    width: 50%;
+    float: left;
     background-color: rgb(40, 99, 101);
     text-align: center;
+    color: aliceblue;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+#costOfTickets {
+    height: 25px;
+    width: 50%;
+    float: left;
+    background-color: rgb(40, 99, 101);
+    text-align: center;
+    color: aliceblue;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
 #netResults {
@@ -304,6 +367,19 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgb(2, 76, 2);
     text-align: center;
     color: aliceblue;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+#numberOfDaysToSimulate {
+    height: 25px;
+    width: 100%;
+    float: left;
+    background-color: rgb(2, 76, 2);
+    text-align: center;
+    color: aliceblue;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
 #ticketsPlayed2 {
@@ -312,6 +388,9 @@ input[type=number]::-webkit-outer-spin-button {
     float: left;
     background-color: cadetblue;
     text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
 }
 
 #netResults2 {
@@ -320,6 +399,47 @@ input[type=number]::-webkit-outer-spin-button {
     float: left;
     background-color: green;
     text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+#lotteryWinnings2 {
+    height: 40px;
+    width: 50%;
+    float: left;
+    background-color: green;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+#costOfTickets2 {
+    height: 40px;
+    width: 50%;
+    float: left;
+    background-color: green;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+#numberOfDaysToSimulate2 {
+    height: 35px;
+    width: 100%;
+    float: left;
+    background-color: green;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+#howManyDays {
+    width: 10%;
+    margin-left: 5px;
 }
 
 #pbDrawingNumbers1 {

@@ -81,45 +81,55 @@
 
     <div id="pbContainerInput">
         <div class="row" id="powerPlayNo1">
-            Choose Your Numbers or Select Randomly
+            Choose Your Tickets Randomly
         </div>
 
 
-        <!-- This is where the powerball ticket number will be selected -->
+        <!-- This is where the powerball ticket numbers will be selected randomly -->
         <div id="ticketSelectorBox">
-            <button class="ticketSelector" id="ticket1" value="1" onclick="assignTicket1()">Ticket 1</button>
-            <button class="ticketSelector" id="ticket2" value="2" onclick="assignTicket2()">Ticket 2</button>
-            <button class="ticketSelector" id="ticket3" value="3" onclick="assignTicket3()">Ticket 3</button>
-            <button class="ticketSelector" id="ticket4" value="4" onclick="assignTicket4()">Ticket 4</button>
-            <button class="ticketSelector" id="ticket5" value="5" onclick="assignTicket5()">Ticket 5</button>
-            <button class="ticketSelector" id="ticket6" value="6" onclick="checkArray()">Check Array</button>
+            <button class="ticketSelector" id="ticket1" value="1" onclick="assignTicketAll()">All</button>
+            <button class="ticketSelector" id="ticket1" value="1" onclick="assignTicket1()">1</button>
+            <button class="ticketSelector" id="ticket2" value="2" onclick="assignTicket2()">2</button>
+            <button class="ticketSelector" id="ticket3" value="3" onclick="assignTicket3()">3</button>
+            <button class="ticketSelector" id="ticket4" value="4" onclick="assignTicket4()">4</button>
+            <button class="ticketSelector" id="ticket5" value="5" onclick="assignTicket5()">5</button>
+            <!-- <button class="ticketSelector" id="ticket6" value="6" onclick="checkArray()">Check Array</button> -->
+        </div>
+
+    <div id="pbContainerInput">
+        <div class="row" id="powerPlayNo1">
+           Pick Your Own Numbers
+        </div>
+
+
+        <!-- This is where the powerball ticket number will be selected by user input -->
+        <div id="ticketSelectorBox">
+            Box Number
+            <button class="cBoxButton" id="cBox1" value="1" onclick="assignCBoxNum1()">1</button>
+            <button class="cBoxButton" id="cBox2" value="2" onclick="assignCBoxNum2()">2</button>
+            <button class="cBoxButton" id="cBox3" value="3" onclick="assignCBoxNum3()">3</button>
+            <button class="cBoxButton" id="cBox4" value="4" onclick="assignCBoxNum4()">4</button>
+            <button class="cBoxButton" id="cBox5" value="5" onclick="assignCBoxNum5()">5</button>
         </div>
 
         <div id="currentlySelectedBox">
-
-
+            <div id="currentlySelectedBoxText"></div>
+            <input class="inputNumberBox" id="inputNumberBox1" type="number" min="1" max="69">
+            <input class="inputNumberBox" id="inputNumberBox2" type="number" min="1" max="69">
+            <input class="inputNumberBox" id="inputNumberBox3" type="number" min="1" max="69">
+            <input class="inputNumberBox" id="inputNumberBox4" type="number" min="1" max="69">
+            <input class="inputNumberBox" id="inputNumberBox5" type="number" min="1" max="69">
+            <input class="inputNumberBox" id="inputNumberBoxPb" type="number" min="1" max="28">
+            <button id="inputNumberBoxSubmit" onclick="assignCustomNumbers()">Submit</button>
+            <!-- ########################################################################################################################################### -->
         </div>
 
 
-        <div class="row" id="powerPlayNo3">
-            #1 #2 #3 #4 #5 PB
+        <div  id="powerPlayNo3">
+            Lottery Statistics
         </div>
 
-        <div class="row" id="powerPlayNo2">
-
-            <!-- <form id=formInput> -->
-            <input class="powerBallsubmit" id="powerBallsubmitBuffer" type="number" name="num1" min="1" max="69"
-                required>
-            <input class="powerBallsubmit" type="number" name="num2" min="1" max="69" required>
-            <input class="powerBallsubmit" type="number" name="num3" min="1" max="69" required>
-            <input class="powerBallsubmit" type="number" name="num4" min="1" max="69" required>
-            <input class="powerBallsubmit" type="number" name="num5" min="1" max="69" required>
-            <input class="powerBallsubmit" type="number" name="numPB" min="1" max="26" required>
-            <input type="button" id="PBsubmit" value="Add" onclick="getNumbers()">
-            <input type="button" id="PbRandom" value="Random" onclick="getNumbers()">
-
-            <!-- </form> -->
-        </div>
+  
 
         <div class="resultsRow" id="resultsRow0">
             <div class="match">Match</div>
@@ -132,10 +142,10 @@
 
         <div class="resultsRow" id="resultsRow1">
             <div class="match">5+PB</div>
-            <div class="prize">Jackpot</div>
+            <div class="prize" id="currentJackpotValue">currentJackpotValue</div>
             <div class="timesHit" id="5+pb">0</div>
             <div class="totalWon" id="5+pbWon">0</div>
-            <div class="odds">292201338.00</div>
+            <div class="odds">292,201,338.00</div>
 
         </div>
 
@@ -144,7 +154,7 @@
             <div class="prize">$1,000,000</div>
             <div class="timesHit" id="5-pb">0</div>
             <div class="totalWon" id="5-pbWon">0</div>
-            <div class="odds">11688053.52</div>
+            <div class="odds">11,688,053.52</div>
         </div>
 
         <div class="resultsRow" id="resultsRow3">
@@ -152,21 +162,21 @@
             <div class="prize">$50,000</div>
             <div class="timesHit" id="4+pb">0</div>
             <div class="totalWon" id="4+pbWon">0</div>
-            <div class="odds">913129.18</div>
+            <div class="odds">913,129.18</div>
         </div>
         <div class="resultsRow" id="resultsRow4">
             <div class="match">4-PB</div>
             <div class="prize">$100</div>
             <div class="timesHit" id="4-pb">0</div>
             <div class="totalWon" id="4-pbWon">0</div>
-            <div class="odds">36525.17</div>
+            <div class="odds">36,525.17</div>
         </div>
         <div class="resultsRow" id="resultsRow5">
             <div class="match">3+PB</div>
             <div class="prize">$100</div>
             <div class="timesHit" id="3+pb">0</div>
             <div class="totalWon" id="3+pbWon">0</div>
-            <div class="odds">14494.11</div>
+            <div class="odds">14,494.11</div>
         </div>
         <div class="resultsRow" id="resultsRow6">
             <div class="match">3-PB</div>
@@ -199,15 +209,21 @@
 
         <!-- results for lottery simulation -->
         <div id="ticketsPlayed">Tickets Played</div>
-        <div id="netResults">Net Results</div>
+        <div id="lotteryWinnings">Lottery Winnings</div>
         <div id="ticketsPlayed2"></div>
+        <div id="lotteryWinnings2"></div>
+        <div id="costOfTickets">Cost of Tickets</div>
+        <div id="netResults">Net Results</div>
+        <div id="costOfTickets2"></div>
         <div id="netResults2"></div>
+        <div id="numberOfDaysToSimulate">Number Drawings To Simulate</div>
+        <div id="numberOfDaysToSimulate2"></div>
 
         <!-- buttons to control the lottery simulation -->
         <div>
-            How many Days?<input id="howManyDays" type="number" min="1" required>
+            How many Drawings?<input id="howManyDays" type="number" min="1" required>
 
-            <button onclick="addDays()">Add Days</button>
+            <button onclick="addDays()">Change Lotto Drawings</button>
             <button onclick="checkTicketsForMatches()">Simulate Lottery</button>
         </div>
 
@@ -235,7 +251,6 @@
         var ticket5numbers = [];
         var arr;
         var resultsArray = []
-        var numberOfDays = 1;
         var fivePlusPb = 0;
         var fiveMinusPb = 0;
         var fourPlusPb = 0;
@@ -261,52 +276,121 @@
         var timesPlayed = 0;
         var costOfPlaying = 0;
         var netWinnings = 0;
-
+        var numberOfDays = 10000;
+        var uInput1;
+        var uInput2;
+        var uInput3;
+        var uInput4;
+        var uInput5;
+        var currentPowerBallJackpot = 110000000;
+        
+        // assignTicketAll();
+        // checkTicketsForMatches();
+        
+        document.getElementById("numberOfDaysToSimulate2").innerHTML = numberOfDays;
+        document.getElementById("currentJackpotValue").innerHTML = ("$" + currentPowerBallJackpot.toLocaleString('en'));
+        assignCBoxNum1();
 
         function addDays() {
             numberOfDays = Number(document.getElementById("howManyDays").value);
-            console.log(numberOfDays);
+            document.getElementById("numberOfDaysToSimulate2").innerHTML = numberOfDays;
+            // console.log(numberOfDays);
+        }
+
+        function assignTicketAll() {
+            
+            for (i=0; i<5; i++) {
+                cBoxNum = (i+1);
+                assignTicketNumber();
+                getNumbers();
+            }
         }
 
         function assignTicket1() {
             cBoxNum = 1;
-            if (cBoxNum = 1) {
-                assignTicketNumber();
-            }
             assignTicketNumber();
+            getNumbers();   
         }
-
+        
         function assignTicket2() {
             cBoxNum = 2;
             assignTicketNumber();
+            getNumbers();  
         }
-
+        
         function assignTicket3() {
             cBoxNum = 3;
             assignTicketNumber();
+            getNumbers();  
         }
-
+        
         function assignTicket4() {
             cBoxNum = 4;
             assignTicketNumber();
+            getNumbers();  
         }
-
+        
         function assignTicket5() {
             cBoxNum = 5;
             assignTicketNumber();
+            getNumbers();  
         }
-
+        
         function assignTicketNumber() {
-            document.getElementById("currentlySelectedBox").innerHTML = "The Current Ticket is Number " + cBoxNum;
+            // document.getElementById("currentlySelectedBox").innerHTML = "The Current Ticket is Number " + cBoxNum;
         }
 
-        function checkArray() {
-            document.getElementById("currentlySelectedBox").innerHTML = "(" + ticket1numbers + ")" + " " + "(" +
-                ticket2numbers + ")" + " " + "(" + ticket3numbers + ")" + " " + "(" + ticket4numbers + ")" + " " + "(" +
-                ticket5numbers + ")";
+        // function checkArray() {
+        //     document.getElementById("currentlySelectedBox").innerHTML = "(" + ticket1numbers + ")" + " " + "(" +
+        //     ticket2numbers + ")" + " " + "(" + ticket3numbers + ")" + " " + "(" + ticket4numbers + ")" + " " + "(" +
+        //         ticket5numbers + ")";
+        //     }
+            
+        function assignCBoxNum1() {
+            cBoxNum = 1;
+            document.getElementById("currentlySelectedBoxText").innerHTML = "Ticket Number " + cBoxNum;
+        }
+        function assignCBoxNum2() {
+            cBoxNum = 2;
+            document.getElementById("currentlySelectedBoxText").innerHTML = "Ticket Number " + cBoxNum;
+        }
+        function assignCBoxNum3() {
+            cBoxNum = 3;
+            document.getElementById("currentlySelectedBoxText").innerHTML = "Ticket Number " + cBoxNum;
+        }
+        function assignCBoxNum4() {
+            cBoxNum = 4;
+            document.getElementById("currentlySelectedBoxText").innerHTML = "Ticket Number " + cBoxNum;
+        }
+        function assignCBoxNum5() {
+            cBoxNum = 5;
+            document.getElementById("currentlySelectedBoxText").innerHTML = "Ticket Number " + cBoxNum;
         }
 
+        //#####################################################################################################################################################
+        function assignCustomNumbers() {
+            assignUserInputVar();
+        }
+        
+        function assignUserInputVar() {
+            uInput1 = Number(document.getElementById("inputNumberBox1").value);
+            uInput2 = Number(document.getElementById("inputNumberBox2").value);
+            uInput3 = Number(document.getElementById("inputNumberBox3").value);
+            uInput4 = Number(document.getElementById("inputNumberBox4").value);
+            uInput5 = Number(document.getElementById("inputNumberBox5").value);
+            uInputPb = Number(document.getElementById("inputNumberBoxPb").value);
+                assignCustomNumbersClear();    
+        }
 
+        function assignCustomNumbersClear() {
+        document.getElementById("inputNumberBox1").value="";
+        document.getElementById("inputNumberBox1").focus();
+        document.getElementById("inputNumberBox2").value="";
+        document.getElementById("inputNumberBox3").value="";
+        document.getElementById("inputNumberBox4").value="";
+        document.getElementById("inputNumberBox5").value="";
+        document.getElementById("inputNumberBoxPb").value="";
+        }
 
         // function to get a random number 1 through 69 and 1 through 26 for the powerball
         function getNumbers() {
@@ -366,31 +450,31 @@
             // assign the ticket numbers to an array to be checked later
             if (cBoxNum === 1) {
                 ticket1numbers = arr;
-                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 1 numbers " +
+                // document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 1 numbers " +
                     ticket1numbers;
                 allTickets.splice(0, 1, arr);
             }
             if (cBoxNum === 2) {
                 ticket2numbers = arr;
-                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 2 numbers " +
+                // document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 2 numbers " +
                     ticket2numbers;
                 allTickets.splice(1, 1, arr);
             }
             if (cBoxNum === 3) {
                 ticket3numbers = arr;
-                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 3 numbers " +
+                // document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 3 numbers " +
                     ticket3numbers;
                 allTickets.splice(2, 1, arr);
             }
             if (cBoxNum === 4) {
                 ticket4numbers = arr;
-                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 4 numbers " +
+                // document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 4 numbers " +
                     ticket4numbers;
                 allTickets.splice(3, 1, arr);
             }
             if (cBoxNum === 5) {
                 ticket5numbers = arr;
-                document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 5 numbers " +
+                // document.getElementById("currentlySelectedBox").innerHTML = "hello world ticket 5 numbers " +
                     ticket5numbers;
                 allTickets.splice(4, 1, arr);
             }
@@ -505,7 +589,7 @@
 
             for (i = 0; i < numberOfDays; i++) {
                 // console.log(allTickets);
-                timesPlayed = timesPlayed+ 5;
+                timesPlayed = timesPlayed + 5;
                 costOfPlaying = timesPlayed * 2;
                 simulateLottery();
                 // console.log("Drawing number " + (i+1) + "'s winning Lottery Numbers are " + resultsArray);
@@ -607,74 +691,76 @@
                     if (matchCounter === 5 && powerballCounter === 1) {
                         fivePlusPb++;
                         document.getElementById("5+pb").innerHTML = fivePlusPb;
-                        fivePlusPbWinnings = 200000000 * fivePlusPb;
-                        document.getElementById("5+pbWon").innerHTML = fivePlusPbWinnings;
+                        fivePlusPbWinnings = currentPowerBallJackpot * fivePlusPb;
+                        document.getElementById("5+pbWon").innerHTML = "$" + fivePlusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 5 && powerballCounter === 0) {
                         fiveMinusPb++
                         document.getElementById("5-pb").innerHTML = fiveMinusPb;
                         fiveMinusPbWinnings = 1000000 * fiveMinusPb;
-                        document.getElementById("5-pbWon").innerHTML = fiveMinusPbWinnings;
+                        document.getElementById("5-pbWon").innerHTML = "$" + fiveMinusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 4 && powerballCounter === 1) {
                         fourPlusPb++;
                         document.getElementById("4+pb").innerHTML = fourPlusPb;
                         fourPlusPbWinnings = 50000 * fourPlusPb;
-                        document.getElementById("4+pbWon").innerHTML = fourPlusPbWinnings;
+                        document.getElementById("4+pbWon").innerHTML = "$" + fourPlusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 4 && powerballCounter === 0) {
                         fourMinusPb++;
                         document.getElementById("4-pb").innerHTML = fourMinusPb;
                         fourMinusPbWinnings = 100 * fourMinusPb;
-                        document.getElementById("4-pbWon").innerHTML = fourMinusPbWinnings;
+                        document.getElementById("4-pbWon").innerHTML = "$" + fourMinusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 3 && powerballCounter === 1) {
                         threePlusPb++;
                         document.getElementById("3+pb").innerHTML = threePlusPb;
                         threePlusPbWinnings = 100 * threePlusPb;
-                        document.getElementById("3+pbWon").innerHTML = threePlusPbWinnings;
+                        document.getElementById("3+pbWon").innerHTML = "$" + threePlusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 3 && powerballCounter === 0) {
                         threeMinusPb++;
                         document.getElementById("3-pb").innerHTML = threeMinusPb;
                         threeMinusPbWinnings = threeMinusPb * 7;
-                        document.getElementById("3-pbWon").innerHTML = threeMinusPbWinnings;
+                        document.getElementById("3-pbWon").innerHTML = "$" + threeMinusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 2 && powerballCounter === 1) {
                         twoPlusPb++;
                         document.getElementById("2+pb").innerHTML = twoPlusPb;
                         twoPlusPbWinnings = twoPlusPb * 7;
-                        document.getElementById("2+pbWon").innerHTML = twoPlusPbWinnings;
+                        document.getElementById("2+pbWon").innerHTML = "$" + twoPlusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 1 && powerballCounter === 1) {
                         onePlusPb++;
                         document.getElementById("1+pb").innerHTML = onePlusPb;
                         onePlusPbWinnings = onePlusPb * 4;
-                        document.getElementById("1+pbWon").innerHTML = onePlusPbWinnings;
+                        document.getElementById("1+pbWon").innerHTML = "$" + onePlusPbWinnings.toLocaleString('en');
                     };
 
                     if (matchCounter === 0 && powerballCounter === 1) {
                         onlyPb++;
                         document.getElementById("0+pb").innerHTML = onlyPb;
                         onlyPbWinnings = onlyPb * 4;
-                        document.getElementById("0+pbWon").innerHTML = onlyPbWinnings;
+                        document.getElementById("0+pbWon").innerHTML = "$" + onlyPbWinnings.toLocaleString('en');
                     };
 
                     totalWinnings = fivePlusPbWinnings + fiveMinusPbWinnings + fourMinusPbWinnings +
                         fourPlusPbWinnings + threeMinusPbWinnings + threePlusPbWinnings + twoPlusPbWinnings +
                         onePlusPbWinnings + onlyPbWinnings;
 
-                        netWinnings = totalWinnings - costOfPlaying;
+                    netWinnings = totalWinnings - costOfPlaying;
 
-                        document.getElementById("netResults2").innerHTML = "$" + netWinnings;
-                        document.getElementById("ticketsPlayed2").innerHTML = timesPlayed;
+                    document.getElementById("netResults2").innerHTML = "$" + netWinnings.toLocaleString('en');
+                    document.getElementById("ticketsPlayed2").innerHTML = timesPlayed.toLocaleString('en');
+                    document.getElementById("costOfTickets2").innerHTML = "$" + costOfPlaying.toLocaleString('en');
+                    document.getElementById("lotteryWinnings2").innerHTML = "$" + totalWinnings.toLocaleString('en');
 
 
 
